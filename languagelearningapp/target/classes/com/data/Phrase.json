@@ -1,0 +1,307 @@
+[
+    {
+        "category": "Greetings",
+        "words": [
+            {
+                "text": "Buenos dias",
+                "translation": "Good morning",
+                "phraseID": "9b74d3d6-085c-4ea6-9f95-7c9a815f4f19"
+            },
+            {
+                "text": "Buenos noches",
+                "translation": "Good night",
+                "phraseID": "ac7d3c9e-b6f2-4438-b346-7b36a1883364"
+            },
+            {
+                "text": "Hasta manana",
+                "translation": "See you tomorrow",
+                "phraseID": "b4ad4395-bec6-46c1-ac3b-ac1680246b22"
+            },
+            {
+                "text": "Nos vemos",
+                "translation": "See you later",
+                "phraseID": "c6f0356d-e15f-4980-9c7f-fb113c0b6c33"
+            },
+            {
+                "text": "Feliz cumpleanos",
+                "translation": "Happy birthday",
+                "phraseID": "699ec723-f894-43df-8ba1-b2b2bddb1f06"
+            },
+            {
+                "text": "Como te llamas",
+                "translation": "What is your name",
+                "phraseID": "ae247fe3-2260-4746-9854-8fe1accd374b"
+            },
+            {
+                "text": "Como estas",
+                "translation": "How are you",
+                "phraseID": "78678981-1e4a-42dc-bd65-0ef05eb6c1ec"
+            },
+            {
+                "text": "Que tal",
+                "translation": "How;s it going",
+                "phraseID": "5be2474e-39c3-4ab8-a204-bc8d3e0ef1bd"
+            },
+            {
+                "text": "Mucho gusto",
+                "translation": "Nice to meet you",
+                "phraseID": "3bd4966f-48cf-44f5-abac-b60b7654b39a"
+            }
+        ]
+    },
+    {
+        "category": "Restaurant",
+        "words": [
+            {
+                "text": "Todavia no estamos listos",
+                "translation": "We are not ready yet",
+                "phraseID": "e40f51d3-8e1b-41bb-8651-38ac9edefd60"
+            },
+            {
+                "text": "Nos puedes dar un minuto mas por favor",
+                "translation": " Can you give us one more minute please",
+                "phraseID": "7a2f8483-2cd3-4530-bb1c-e4124ba7f9f7"
+            },
+            {
+                "text": "Vamos a compartir",
+                "translation": " We are going to share",
+                "phraseID": "0faa2d21-7389-4c12-befd-93d2a7dd0cf1"
+            },
+            {
+                "text": "Todo esta delicioso",
+                "translation": "Everything is delicioso",
+                "phraseID": "a5c037e8-a856-453f-baf3-bdec14494dd4"
+            },
+            {
+                "text": "Te encargo la cuenta por favor",
+                "translation": "Can I get the check please",
+                "phraseID": "7344d093-83c8-4048-9305-27a918b63881"
+            },
+            {
+                "text": "Puedo tener agua",
+                "translation": "May I have a water",
+                "phraseID": "b966db70-f5ca-47a7-b247-70be22e11077"
+            }
+        ]
+    },
+    {
+        "category": "Airport",
+        "words": [
+            {
+                "text": "A que puerta debe ir",
+                "translation": "What gate should I go to",
+                "phraseID": "4dfc95fa-570a-41a7-943a-47ac90a902b6"
+            },
+            {
+                "text": "Donde esta mi equipage",
+                "translation": "Where is my baggage",
+                "phraseID": "ba172953-8530-4a78-8c08-d951b12e532e"
+            },
+            {
+                "text": "Cual es mi numero de vuelo",
+                "translation": "What is my flight number",
+                "phraseID": "ec514220-94ce-4261-8f20-d2186edf3793"
+            },
+            {
+                "text": "Es un vuelo directo",
+                "translation": "Is it a direct flight",
+                "phraseID": "759e56f3-933a-4703-8786-51eeecd7ee84"
+            },
+            {
+                "text": "Cuando sale el vuelo",
+                "translation": "When does the flight leave",
+                "phraseID": "5aea7170-679e-4dcb-b8df-3c00288f1265"
+            },
+            {
+                "text": "Cuando llega el vuelo",
+                "translation": "When does the flight arrive",
+                "phraseID": "e961c944-b225-49f2-8851-dcd1ac05220e"
+            },
+            {
+                "text": "Necesito ir al bano",
+                "translation": "I need to go to a bathroom",
+                "phraseID": "e76ad10b-79c8-4545-bde2-912acd38dbf3"
+            },
+            {
+                "text": "La pista de despegue",
+                "translation": "Takeoff runway",
+                "phraseID": "dba41f38-d60a-4771-ad61-902c525286eb"
+            },
+            {
+                "text": "El area de embarque",
+                "translation": "Boarding area",
+                "phraseID": "4db8a252-bf29-436b-a2be-0dc0ac18ac16"
+            },
+            {
+                "text": "El auxiliar de vuelo",
+                "translation": "Flight attendant",
+                "phraseID": "213f67cb-161b-4d91-96b5-1e9252e37c20"
+            },
+            {
+                "text": "El pase de abordaje",
+                "translation": "Boarding pass",
+                "phraseID": "b5b88bac-7e0e-4a3d-8543-b225645af744"
+            },
+            {
+                "text": "El carrusel de equipaje",
+                "translation": "Baggage carrousel",
+                "phraseID": "3583f222-7889-4f3a-8aad-6910f7869c23"
+            }
+        ]
+    },
+    {
+        "category": "Museum",
+        "words": [
+            {
+                "text": "Puedo tomar fotos",
+                "translation": "Can I take photos",
+                "phraseID": "12f003fe-4429-4bb7-8ee4-36690a9bba9d"
+            },
+            {
+                "text": "Que es esto",
+                "translation": "What is this",
+                "phraseID": "897748b8-47bc-4083-ada9-468404e1688e"
+            },
+            {
+                "text": "Me gusta mucho",
+                "translation": "I really like it",
+                "phraseID": "5c981a26-262d-4c91-a2f3-b1d5fae29829"
+            },
+            {
+                "text": "No esta permitido tocar",
+                "translation": "Do not touch",
+                "phraseID": "997dc556-b7e7-482f-9f13-f6931926e44c"
+            },
+            {
+                "text": "Esta prohibido grabar",
+                "translation": "Recording is prohibited",
+                "phraseID": "b72dac33-8fd6-45d9-994e-6af832175cc4"
+            },
+            {
+                "text": "Es gratis visitar el museo",
+                "translation": "The museum is free to visit",
+                "phraseID": "b740f8a5-3ed5-4495-8ef4-18700873202f"
+            },
+            {
+                "text": "Vi muchas pinturas muy bonitas",
+                "translation": "I saw many very beautiful paintings",
+                "phraseID": "fd443e07-42ee-435d-bfaf-98013965f740"
+            },
+            {
+                "text": "Donde esta el mapa",
+                "translation": "Where is the map",
+                "phraseID": "4438de5c-7545-459b-ad8c-740bd5df7c27"
+            },
+            {
+                "text": "Cual es la exposicion principal",
+                "translation": "Where is the main exhibit",
+                "phraseID": "96ad129f-8f57-4a6d-8a9d-3da0e74009bd"
+            },
+            {
+                "text": "Hay tours en ingles",
+                "translation": "Are there tours in English",
+                "phraseID": "193aabfa-5104-40ee-9f03-e3cfd6adabaa"
+            }
+        ]
+    },
+    {
+        "category": "School",
+        "words": [
+            {
+                "text": "El proximo lunes tenemos un examen de matematicas",
+                "translation": "Next Monday we have a math test",
+                "phraseID": "fcdecf9d-4fbc-42e2-baf0-6bc77521fee3"
+            },
+            {
+                "text": "Estudiado mucho y espero sacar buena nota",
+                "translation": "I have studied hard and I hope to get a good grade",
+                "phraseID": "ddbc01e7-4232-495d-a367-6d246ba3b85e"
+            },
+            {
+                "text": "Has hecho las tareas",
+                "translation": "Have you done your homework",
+                "phraseID": "765befc6-7f39-4c2c-b547-3ccb1324b7f6"
+            },
+            {
+                "text": "Tenemos clase de espanol los lunes a las diez",
+                "translation": "We have Spanish class on Mondays at ten",
+                "phraseID": "7fe10459-6f28-4a13-b69c-ea4190400569"
+            },
+            {
+                "text": "El escuela de primaria",
+                "translation": "Elementary school",
+                "phraseID": "9eadc30d-8179-4246-a2c8-8b50301539a4"
+            },
+            {
+                "text": "Hacer una presentacion",
+                "translation": "To make a presentation",
+                "phraseID": "f12dea01-309e-4749-8f17-7cc46944108d"
+            },
+            {
+                "text": "Levantar la mano",
+                "translation": "To raise the hand",
+                "phraseID": "bbbf2e4f-a852-4468-8b20-25b1b6080836"
+            },
+            {
+                "text": "El material escolar",
+                "translation": "School supplies",
+                "phraseID": "ff0186d6-9ebc-4a30-9940-63e945c8a1a0"
+            },
+            {
+                "text": "Ciencias sociales",
+                "translation": "Social studies",
+                "phraseID": "d2360e56-16b6-4814-b4d0-05b361c2f26a"
+            }
+        ]
+    },
+    {
+        "category": "Colors",
+        "words": [
+            {
+                "text": "El oceano es azul",
+                "translation": "The ocean is blue",
+                "phraseID": "8e21dcaf-98f8-405a-8125-4f1ca49ac523"
+            },
+            {
+                "text": "La hierba es verde",
+                "translation": "The grass is green",
+                "phraseID": "88e1ed30-7aac-41fe-8c5f-bcbc055667df"
+            },
+            {
+                "text": "El sol es amarillo",
+                "translation": "The sun is yellow",
+                "phraseID": "0a86d006-59cb-4238-a731-64d3da52bdb6"
+            },
+            {
+                "text": "El arco iris se compone de todos los colores",
+                "translation": "The rainbow is made up of all colors",
+                "phraseID": "cd243d03-db97-4644-b9ad-86b8c8992941"
+            },
+            {
+                "text": "El cerdo es rosa",
+                "translation": "The pig is pink",
+                "phraseID": "91083b3c-6c56-4318-bb70-6496909159e5"
+            },
+            {
+                "text": "El rojo es el color del amor",
+                "translation": "Red is the color of love",
+                "phraseID": "ed92295f-5061-476e-9bc2-46174de384b0"
+            },
+            {
+                "text": "Una naranja es naranja",
+                "translation": "An orange is orange",
+                "phraseID": "afa37cfc-f018-4d8a-b146-bca47b5fd3dc"
+            },
+            {
+                "text": "Por la noche el cielo es negro",
+                "translation": "At night the sky is black",
+                "phraseID": "3d70d230-8472-47a5-baee-6ffb12754f27"
+            },
+            {
+                "text": "Durante el dia el cielo es azul",
+                "translation": "During the day the sky is blue",
+                "phraseID": "11f43e35-aee7-4e92-b5f9-bf05d5a673c8"
+            }
+        ]
+    }
+]

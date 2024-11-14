@@ -1,0 +1,40 @@
+{
+    "lessons": [
+      {
+        "lessonID": "91da92a5-4d83-4236-ab92-10e38531f24f",
+        "title": "Colors"
+      },
+      {
+        "lessonID": "86fff6c7-f0bc-4a2e-b110-f1753340d3a",
+        "title": "Days"
+      },
+      {
+        "lessonID": "5e77d89b-9e07-467b-ae10-cbb4df6c398c",
+        "title": "Numbers"
+      },
+      {
+        "lessonID": "9abcdef0-1234-5678-90ab-cdef12345678",
+        "title": "Months"
+      },
+      {
+        "lessonID": "9415e751-893b-40c2-bcc7-9057ac44bfee",  
+        "title": "Greetings" 
+      },
+      {
+        "lessonID": "47051297-8563-4ff1-b483-3f38fee6c2fd",  
+        "title": "Restaurant" 
+      },
+      {
+        "lessonID": "f02239fd-8b28-425e-9ecd-74ee8424d2d0",  
+        "title": "Airport" 
+      },
+      {
+        "lessonID": "dd6c7635-8f51-4e36-86fe-3884536cfc79",  
+        "title": "Museum" 
+      },
+      {
+        "lessonID": "415a7823-d0dc-4db1-990d-728d8e37e4dd",  
+        "title": "School" 
+      }
+    ]
+  }
