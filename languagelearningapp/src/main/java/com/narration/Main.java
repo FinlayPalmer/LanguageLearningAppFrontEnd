@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 
 import org.json.simple.parser.ParseException;
 
+import com.model.LanguageAppFacade;
+
 /**
  * @author Astha Singh, Sanjana Guzzarlamudi, Matthew Botteon, Finlay Palmer
  * 
@@ -21,21 +23,8 @@ import org.json.simple.parser.ParseException;
  *         from the JSON file,
  *         and prints out the details of each account and lesson.
  */
-public class Main extends Application {
+public class Main {
 
     public static void main(String[] args) {
-        launch(args);
-    }
-
-    @Override
-    public void start(Stage primaryStage) {
-        Button speakButton = new Button("Speak 'Hello World'");
-        speakButton.setOnAction(event -> Narrator.playSound("Hola Mundo")); 
-
-        StackPane root = new StackPane(speakButton);
-        Scene scene = new Scene(root, 300, 200);
-        primaryStage.setTitle("Language Learning App");
-        primaryStage.setScene(scene);
-        primaryStage.show();
     }
 }

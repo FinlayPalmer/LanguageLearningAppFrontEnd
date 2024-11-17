@@ -9,7 +9,7 @@ public class PrimaryController {
 
     @FXML
     private void switchToSecondary() throws IOException {
-        Narrator.playSound("Hola");
+        Narrator.playSound("Hola Mundo");
         //App.setRoot("secondary");
     }
 }
