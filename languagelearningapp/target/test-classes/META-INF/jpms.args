@@ -1,0 +1,4 @@
+--patch-module
+com.languageapp=_
+--add-reads
+com.languageapp=ALL-UNNAMED

@@ -26,7 +26,4 @@ module com.languageapp {
 
     opens com.controllers to javafx.fxml;
     exports com.controllers;
-
-    opens com.testing to javafx.fxml;
-    exports com.testing;
 }
