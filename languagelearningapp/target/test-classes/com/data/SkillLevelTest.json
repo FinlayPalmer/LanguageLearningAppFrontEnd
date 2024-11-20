@@ -1,0 +1,76 @@
+{
+    "questions": [
+        {
+            "questionText": "What is the Spanish word for 'to understand'?",
+            "options": ["comprender", "entender", "saber", "aprender"],
+            "correctAnswer": "entender",
+            "UUID": 1
+        },
+        {
+            "questionText": "Translate the phrase 'I am going to the store.' into Spanish.",
+            "options": ["Voy a la tienda.", "Estoy yendo a la tienda.", "Voy al mercado.", "Yo voy a la tienda."],
+            "correctAnswer": "Voy a la tienda.",
+            "UUID": 2
+        },
+        {
+            "questionText": "What does 'hermano' mean in English?",
+            "options": ["sister", "brother", "friend", "uncle"],
+            "correctAnswer": "brother",
+            "UUID": 1
+        },
+        {
+            "questionText": "Which of the following is the correct plural form of 'libro' (book)?",
+            "options": ["libros", "libroses", "libroses", "libra"],
+            "correctAnswer": "libros",
+            "UUID": 2
+        },
+        {
+            "questionText": "How do you say 'I would like to order a coffee' in Spanish?",
+            "options": ["Quisiera pedir un café.", "Me gustaría pedir un café.", "Me quiero un café.", "Yo quiero un café."],
+            "correctAnswer": "Me gustaría pedir un café.",
+            "UUID": 3
+        },
+        {
+            "questionText": "Complete the sentence: 'Ella ______ (to want) ir al cine.'",
+            "options": ["quiere", "quiero", "quieren", "quería"],
+            "correctAnswer": "quiere",
+            "UUID": 3
+        },
+        {
+            "questionText": "What is the Spanish term for 'environment'?",
+            "options": ["medio ambiente", "entorno", "ambiente", "ecosistema"],
+            "correctAnswer": "medio ambiente",
+            "UUID": 1
+        },
+        {
+            "questionText": "Translate 'He has been working here for five years.' into Spanish.",
+            "options": [
+                "Él ha estado trabajando aquí durante cinco años.",
+                "Él trabaja aquí desde hace cinco años.",
+                "Él estuvo trabajando aquí por cinco años.",
+                "Él ha trabajado aquí cinco años."
+            ],
+            "correctAnswer": "Él ha estado trabajando aquí durante cinco años.",
+            "UUID": 2
+        },
+        {
+            "questionText": "What is the appropriate response to '¿Cómo estás?'?",
+            "options": [
+                "Estoy bien, gracias.",
+                "Yo soy bien, gracias.",
+                "Soy bien, gracias.",
+                "Estoy bien."
+            ],
+            "correctAnswer": "Estoy bien, gracias.",
+            "UUID": 3
+        },
+        {
+            "questionText": "What does 'es necesario' mean?",
+            "options": ["it is easy", "it is necessary", "it is important", "it is difficult"],
+            "correctAnswer": "it is necessary",
+            "UUID": 1
+        }
+    ],
+    "score": 0,
+    "currentQuestionIndex": 0
+}

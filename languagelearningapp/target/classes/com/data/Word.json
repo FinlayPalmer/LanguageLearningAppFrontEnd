@@ -1,0 +1,257 @@
+[
+    {
+        "category": "Colors",
+        "words": [
+            {
+                "text": "amarillo",
+                "translation": "yellow",
+                "wordID": "9497ae92-5471-405a-bcb0-4e3e4ce50d10"
+            },
+            {
+                "text": "azul",
+                "translation": "blue",
+                "wordID": "baf3f96c-a2c0-49e4-ac53-20a2ef64549a"
+            },
+            {
+                "text": "blanco",
+                "translation": "white",
+                "wordID": "6db152e8-f28f-433f-a9f4-73e737d2a2f6"
+            },
+            {
+                "text": "gris",
+                "translation": "gray",
+                "wordID": "2e4da26c-4def-4f28-9976-257645abb35c"
+            },
+            {
+                "text": "marron",
+                "translation": "brown",
+                "wordID": "64c3b488-965b-4fcc-a570-17deb1e6b942"
+            },
+            {
+                "text": "morado",
+                "translation": "purple",
+                "wordID": "fe568357-f614-409a-8eb7-8e6ff59af5d2"
+            },
+            {
+                "text": "naranja",
+                "translation": "orange",
+                "wordID": "4339e310-9570-436e-aac6-70f8e896f0cf"
+            },
+            {
+                "text": "negro",
+                "translation": "black",
+                "wordID": "7b80cc70-b9d7-4b87-b8c8-eead99ef827b"
+            },
+            {
+                "text": "rojo",
+                "translation": "red",
+                "wordID": "83588b12-13e9-4738-af85-3de1bd4ef321"
+            },
+            {
+                "text": "rosa",
+                "translation": "pink",
+                "wordID": "5bd319ac-0633-4cae-9835-fafae4a54a1c"
+            },
+            {
+                "text": "verde",
+                "translation": "green",
+                "wordID": "58d7f285-fc1d-4f35-9725-23cb05086aab"
+            }
+        ]
+    },
+    {
+        "category": "Family",
+        "words": [
+            {
+                "text": "madre",
+                "translation": "mother",
+                "wordID": "534e48d2-336b-4770-b4ae-bbe71a01cc4a"
+            },
+            {
+                "text": "padre",
+                "translation": "father",
+                "wordID": "4959206a-7f13-4722-b282-79534c96ca9c"
+            },
+            {
+                "text": "hermano",
+                "translation": "brother",
+                "wordID": "31bb65df-2603-4ff5-80cd-18c5c7e4435e"
+            },
+            {
+                "text": "hermana",
+                "translation": "sister",
+                "wordID": "3d2d3fcc-0882-45c1-9674-95bd91f0e045"
+            },
+            {
+                "text": "hijo",
+                "translation": "son",
+                "wordID": "9d70075d-be0a-4753-ab3b-8db86e95f71e"
+            },
+            {
+                "text": "hija",
+                "translation": "daughter",
+                "wordID": "0460c6de-c9d6-4bee-b741-ff1db0d33345"
+            }
+        ]
+    },
+    {
+        "category": "Months",
+        "words": [
+            {
+                "text": "enero",
+                "translation": "January",
+                "wordID": "eabd0c88-52d1-4745-bdd8-63c19f34d42c"
+            },
+            {
+                "text": "febrero",
+                "translation": "February",
+                "wordID": "b4c4ba05-8d7f-4013-a5a4-ea36c0d1b718"
+            },
+            {
+                "text": "marzo",
+                "translation": "March",
+                "wordID": "57650339-99b8-41b0-aa2e-125a8d1f8f19"
+            },
+            {
+                "text": "abril",
+                "translation": "April",
+                "wordID": "29295450-b2e5-4813-96e0-2096cafc0a27"
+            },
+            {
+                "text": "mayo",
+                "translation": "May",
+                "wordID": "62e35eb8-66e1-42ed-80b7-98b2e109dccd"
+            },
+            {
+                "text": "junio",
+                "translation": "June",
+                "wordID": "0742aa91-3dc7-4285-961d-369dfe29e521"
+            },
+            {
+                "text": "julio",
+                "translation": "July",
+                "wordID": "b74af608-ea0b-4a2b-8e6c-0417a65d9554"
+            },
+            {
+                "text": "agosto",
+                "translation": "August",
+                "wordID": "26d67526-382b-4367-9d8d-84ff2da45a91"
+            },
+            {
+                "text": "septiembre",
+                "translation": "September",
+                "wordID": "e8983e6a-536c-49b5-8f14-ecdc7560de2f"
+            },
+            {
+                "text": "octubre",
+                "translation": "October",
+                "wordID": "71f595b4-d8c5-46e4-b59d-3c8f431210c9"
+            },
+            {
+                "text": "noviembre",
+                "translation": "November",
+                "wordID": "b76cbbaf-7faf-4dd7-b173-96e434163064"
+            },
+            {
+                "text": "diciembre",
+                "translation": "December",
+                "wordID": "13f2bdc1-6561-43f0-bf4b-e3767f5f067f"
+            }
+        ]
+    },
+    {
+        "category": "Numbers",
+        "words": [
+            {
+                "text": "uno",
+                "translation": "one",
+                "wordID": "268059cb-8e2e-420a-b0c7-d25a777479ad"
+            },
+            {
+                "text": "dos",
+                "translation": "two",
+                "wordID": "c39964bc-8863-4acb-874d-7fd539cb02ff"
+            },
+            {
+                "text": "tres",
+                "translation": "three",
+                "wordID": "a204e80b-b1cc-40f9-9e3e-af1774428342"
+            },
+            {
+                "text": "cuatro",
+                "translation": "four",
+                "wordID": "072a8a74-6b5d-42c6-a1d0-bf9c3fc83408"
+            },
+            {
+                "text": "cinco",
+                "translation": "five",
+                "wordID": "5cf3f011-dd7c-4b6f-8830-fdb27be696fd"
+            },
+            {
+                "text": "seis",
+                "translation": "six",
+                "wordID": "24305713-e6f0-475e-8687-2dc631af1abc"
+            },
+            {
+                "text": "siete",
+                "translation": "seven",
+                "wordID": "c7416604-af52-4b3f-b1f6-a4da401b3641"
+            },
+            {
+                "text": "ocho",
+                "translation": "eight",
+                "wordID": "8638eb3c-bd8e-49bf-b2dd-b40640692b88"
+            },
+            {
+                "text": "nueve",
+                "translation": "nine",
+                "wordID": "13277bee-0af5-4395-9f1d-8b054a5e35b0"
+            },
+            {
+                "text": "diez",
+                "translation": "ten",
+                "wordID": "33b00e0c-ca36-4ca9-8537-80537d69b2f7"
+            }
+        ]
+    },
+    {
+        "category": "Days",
+        "words": [
+            {
+                "text": "lunes",
+                "translation": "Monday",
+                "wordID": "de5c2c1f-eda7-4fce-b6f5-e2092435c731"
+            },
+            {
+                "text": "martes",
+                "translation": "Tuesday",
+                "wordID": "772c252f-62f6-4a81-a33e-c87150523e67"
+            },
+            {
+                "text": "miercoles",
+                "translation": "Wednesday",
+                "wordID": "d7e4a8c6-364f-4b24-98ec-acbf9370efcf"
+            },
+            {
+                "text": "jueves",
+                "translation": "Thursday",
+                "wordID": "c63922c4-dbb4-427f-8563-2109552b49da"
+            },
+            {
+                "text": "viernes",
+                "translation": "Friday",
+                "wordID": "5e1b43a1-d706-4c84-8371-fd0ecc22e047"
+            },
+            {
+                "text": "sabado",
+                "translation": "Saturday",
+                "wordID": "f81f0c51-c9b9-4b9b-90bb-33a1e326916d"
+            },
+            {
+                "text": "domingo",
+                "translation": "Sunday",
+                "wordID": "07fcf253-d860-486e-ac84-b7a01236d631"
+            }
+        ]
+    }
+]
