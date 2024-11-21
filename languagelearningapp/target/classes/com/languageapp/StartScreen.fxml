@@ -8,7 +8,7 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.StartScreenController">
    <children>
-      <Label text="Primary View" />
+      <Label text="Hola! (we should also make an app name)" />
       <Button fx:id="logIn" onAction="#loginClicked" text="Log In" />
       <Button fx:id="signUp" mnemonicParsing="false" onAction="#signUpClicked" text="Sign Up" />
    </children>

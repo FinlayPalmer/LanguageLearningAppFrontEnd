@@ -34,4 +34,9 @@ public class SectionController {
         App.setRoot("Profile");
     }
 
+    @FXML
+    private void switchToLeaderboard() throws IOException {
+        App.setRoot("Leaderboard");
+    }
+
 }
