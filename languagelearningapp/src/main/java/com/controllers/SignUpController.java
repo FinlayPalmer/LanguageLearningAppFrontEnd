@@ -7,7 +7,7 @@ import com.languageapp.App;
 public class SignUpController {
 
     @FXML
-    private void signUpClicked() throws IOException {
+    private void switchToStart() throws IOException {
         App.setRoot("StartScreen");
     }
 

@@ -7,7 +7,7 @@ import com.languageapp.App;
 public class LoginController {
 
     @FXML
-    private void switchToPrimary() throws IOException {
+    private void switchToStart() throws IOException {
         App.setRoot("StartScreen");
     }
 

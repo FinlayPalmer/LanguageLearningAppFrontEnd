@@ -9,8 +9,8 @@
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.LoginController">
     <children>
         <Label alignment="TOP_LEFT" text="Login" />
-        <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="Switch to Primary View" />
-        <Button fx:id="section" onAction="#switchToSection" text="Go to section screen" />
+        <Button fx:id="start" onAction="#switchToStart" text="Back to Start" />
+        <Button fx:id="section" onAction="#switchToSection" text="Section Screen" />
     </children>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
