@@ -13,4 +13,9 @@ public class ProfileController {
     private void switchToSection() throws IOException {
         App.setRoot("Section");
     }
+
+    @FXML
+    private void switchToStart() throws IOException {
+        App.setRoot("StartScreen");
+    }
 }
