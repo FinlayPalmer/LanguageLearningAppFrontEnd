@@ -10,4 +10,9 @@ public class SignUpController {
     private void signUpClicked() throws IOException {
         App.setRoot("StartScreen");
     }
+
+    @FXML
+    private void switchToSection() throws IOException {
+        App.setRoot("Section");
+    }
 }

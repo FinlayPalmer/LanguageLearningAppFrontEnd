@@ -10,6 +10,7 @@
     <children>
         <Label text="Sign Up Screen" />
         <Button fx:id="secondaryButton" onAction="#signUpClicked" text="Sign Up" />
+        <Button fx:id="section" onAction="#switchToSection" text="Section" />
     </children>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
