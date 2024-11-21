@@ -15,4 +15,9 @@ public class SectionController {
     private void switchToEasy() throws IOException {
         App.setRoot("EasyLessons");
     }
+
+    @FXML
+    private void switchToMedium() throws IOException {
+        App.setRoot("MediumLessons");
+    }
 }

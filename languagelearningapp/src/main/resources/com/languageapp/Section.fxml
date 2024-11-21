@@ -10,7 +10,7 @@
    <children>
       <Label text="Section Screen" />
       <Button fx:id="easy" onAction="#switchToEasy" text="Easy" />
-      <Button fx:id="medium" onAction="#switchToPrimary" text="Medium" />
+      <Button fx:id="medium" onAction="#switchToMedium" text="Medium" />
       <Button fx:id="difficult" onAction="#switchToPrimary" text="Difficult" />
    </children>
    <padding>

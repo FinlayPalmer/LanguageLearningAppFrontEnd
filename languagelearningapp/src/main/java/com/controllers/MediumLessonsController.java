@@ -1,10 +1,10 @@
 package com.controllers;
 
 import java.io.IOException;
-import javafx.fxml.FXML;
 import com.languageapp.App;
+import javafx.fxml.FXML;
 
-public class EasyLessonController {
+public class MediumLessonsController {
     
     @FXML
     private void switchToSection() throws IOException {
