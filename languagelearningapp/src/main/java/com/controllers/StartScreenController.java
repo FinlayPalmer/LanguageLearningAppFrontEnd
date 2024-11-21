@@ -9,8 +9,8 @@ public class StartScreenController {
 
     @FXML
     private void loginClicked() throws IOException {
-        Narrator.playSound("Hola Mundo");
-        // App.setRoot("secondary");
+        //Narrator.playSound("Hola Mundo");
+        App.setRoot("Login");
     }
 
     @FXML
