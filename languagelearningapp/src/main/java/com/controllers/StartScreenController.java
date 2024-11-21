@@ -15,6 +15,6 @@ public class StartScreenController {
 
     @FXML
     private void signUpClicked() throws IOException {
-
+        App.setRoot("SignUp");
     }
 }
