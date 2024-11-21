@@ -11,6 +11,7 @@
         <Label text="Profile" />
         <Button fx:id="back" onAction="#switchToSection" text="Back to Section" />
         <Button fx:id="logout" onAction="#switchToStart" text="Logout" />
+        <Button fx:id="resetPassword" onAction="#switchToResetPassword" text="Reset Password" />
     </children>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

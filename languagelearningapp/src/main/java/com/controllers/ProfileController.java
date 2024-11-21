@@ -18,4 +18,9 @@ public class ProfileController {
     private void switchToStart() throws IOException {
         App.setRoot("StartScreen");
     }
+
+    @FXML
+    private void switchToResetPassword() throws IOException {
+        App.setRoot("ResetPassword");
+    }
 }
