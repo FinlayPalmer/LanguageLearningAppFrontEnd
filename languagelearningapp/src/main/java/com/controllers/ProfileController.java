@@ -7,7 +7,7 @@ import com.languageapp.App;
 /**
  * @author Matthew Botteon
  */
-public class DifficultLessonsController {
+public class ProfileController {
     
     @FXML
     private void switchToSection() throws IOException {

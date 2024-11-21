@@ -4,6 +4,9 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import com.languageapp.App;
 
+/**
+ * @author Matthew Botteon
+ */
 public class EasyLessonsController {
     
     @FXML

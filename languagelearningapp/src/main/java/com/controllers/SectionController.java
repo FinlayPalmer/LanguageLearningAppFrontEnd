@@ -4,6 +4,9 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import com.languageapp.App;
 
+/**
+ * @author Matthew Botteon
+ */
 public class SectionController {
 
     @FXML
@@ -25,4 +28,10 @@ public class SectionController {
     private void switchToDifficult() throws IOException {
         App.setRoot("DifficultLessons");
     }
+
+    @FXML
+    private void switchToProfile() throws IOException {
+        App.setRoot("Profile");
+    }
+
 }

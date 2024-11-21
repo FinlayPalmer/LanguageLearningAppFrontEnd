@@ -6,10 +6,10 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.DifficultLessonsController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.ProfileController">
     <children>
-        <Label text="Difficult Lessons" />
-        <Button fx:id="back" onAction="#switchToSection" text="Back" />
+        <Label text="Profile" />
+        <Button fx:id="back" onAction="#switchToSection" text="Back to Section" />
     </children>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
