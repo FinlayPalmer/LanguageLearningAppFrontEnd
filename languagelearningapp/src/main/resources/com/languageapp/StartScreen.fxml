@@ -4,15 +4,16 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import java.net.*?>
 
-<<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.StartScreenController">
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.StartScreenController">
     <children>
         <Label text="Welcome" layoutX="140" layoutY="20" style="-fx-font-size: 24px;" />
         <Button text="Login" layoutX="140" layoutY="100" onAction="#loginClicked" />
         <Button text="Sign Up" layoutX="140" layoutY="150" onAction="#signUpClicked" />
     </children>
-</AnchorPane>
    <stylesheets>
       <URL value="@styles.css" />
    </stylesheets>
+</AnchorPane>
