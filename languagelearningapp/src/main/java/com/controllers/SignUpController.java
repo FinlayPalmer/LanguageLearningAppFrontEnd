@@ -1,11 +1,17 @@
 package com.controllers;
 
 import java.io.IOException;
-import javafx.fxml.FXML;
+
 import com.languageapp.App;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.PasswordField;
 
 public class SignUpController {
 
+    @FXML
+    private PasswordField passwordField;
+    
     @FXML
     private void switchToStart() throws IOException {
         App.setRoot("StartScreen");
@@ -15,4 +21,10 @@ public class SignUpController {
     private void switchToSection() throws IOException {
         App.setRoot("Section");
     }
+    @FXML
+    private void submitSignUp() {
+        String password = passwordField.getText(); 
+        System.out.println("Password: " + password);
+    }
 }
+
