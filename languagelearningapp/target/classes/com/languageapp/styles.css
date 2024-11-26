@@ -22,3 +22,9 @@
     .button:hover {
         -fx-background-color: #FF8C00;
     }
+    
+    .circle {
+        -fx-fill: #f2b279;
+        -fx-stroke: #FFFFFF;
+        -fx-stroke-width: 2;
+    }

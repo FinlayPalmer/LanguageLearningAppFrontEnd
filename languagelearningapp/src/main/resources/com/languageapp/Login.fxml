@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.URL?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-
-<AnchorPane stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.LoginController">
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.LoginController" prefWidth="375" prefHeight="667" stylesheets="@styles.css">
    <children>
-      <VBox alignment="CENTER" prefHeight="356.0" prefWidth="284.0" spacing="20.0">
+      <VBox alignment="CENTER" layoutX="50" layoutY="50" prefWidth="275" spacing="20">
           <children>
-            <Label stylesheets="@styles.css" text="Login">
-               <font>
-                  <Font size="33.0" />
-               </font>
-            </Label>
-            <TextField text="Username" />
-            <TextField accessibleRole="PASSWORD_FIELD" prefHeight="27.0" prefWidth="202.0" text="Password" />
-              <Button fx:id="start" onAction="#switchToStart" prefWidth="141.0" text="Back to Start" />
-              <Button fx:id="section" minHeight="20.0" onAction="#switchToSection" prefHeight="37.0" prefWidth="153.0" text="Submit" />
+              <Label text="Login" style="-fx-font-size: 27px; -fx-font-weight: bold; -fx-text-fill: white;" />
+              
+              <VBox spacing="5">
+                  <Label text="Username" />
+                  <TextField fx:id="usernameField" promptText="Enter your username" />
+              </VBox>
+              
+              <VBox spacing="5">
+                  <Label text="Password" />
+                  <PasswordField fx:id="passwordField" promptText="Enter your password" />
+              </VBox>
+              
+              <Button text="Submit" onAction="#switchToSection" style="-fx-background-color: #FFA500; -fx-text-fill: white; -fx-font-weight: bold;" />
+              <Button text="Back to Start" onAction="#switchToStart" style="-fx-background-color: #FFA500; -fx-text-fill: white; -fx-font-weight: bold;" />
           </children>
-          <padding>
-              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-          </padding>
-          <stylesheets>
-            <URL value="@styles.css" />
-         </stylesheets>
       </VBox>
    </children>
 </AnchorPane>
