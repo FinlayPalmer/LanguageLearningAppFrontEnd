@@ -1,20 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.URL?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.EasyLessonsController">
+<AnchorPane prefHeight="667" prefWidth="375" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.EasyLessonsController">
     <children>
-        <Label text="Easy Lessons" />
-        <Button fx:id="back" onAction="#switchToSection" text="Back" />
+        <Label layoutX="107.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;" text="Easy Lessons" />
+        
+        <Pane layoutX="50.0" layoutY="92.0" prefHeight="200" prefWidth="275">
+            <children>
+                <Circle fx:id="lesson1Circle" layoutX="21.0" layoutY="59.0" radius="57.0" style="-fx-fill: #f2b279;" />
+                <Label layoutX="-13.0" layoutY="44.0" style="-fx-text-fill: white; -fx-alignment: center;" text="Colors">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+
+                <Circle fx:id="lesson2Circle" layoutX="244.0" layoutY="147.0" radius="57.0" style="-fx-fill: #f2b279;" />
+                <Label layoutX="193.0" layoutY="132.0" style="-fx-text-fill: white; -fx-alignment: center;" text="Greetings">
+               <font>
+                  <Font size="25.0" />
+               </font></Label>
+            </children>
+        </Pane>
+        
+        <HBox alignment="CENTER" layoutX="50.0" layoutY="600.0" prefWidth="275" spacing="20">
+            <Button onAction="#goToHome" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: #f2b279; -fx-text-fill: white; -fx-font-weight: bold;" text="Home" />
+            <Button onAction="#goToCompletedLessons" prefHeight="35.0" prefWidth="188.0" style="-fx-background-color: #f2b279; -fx-text-fill: white; -fx-font-weight: bold;" text="Completed">
+            <font>
+               <Font size="14.0" />
+            </font></Button>
+            <Button onAction="#goToProfile" prefHeight="38.0" prefWidth="167.0" style="-fx-background-color: #f2b279; -fx-text-fill: white; -fx-font-weight: bold;" text="Profile" />
+        </HBox>
+
+          <Circle fx:id="lesson3Circle" layoutX="100.0" layoutY="373.0" radius="57.0" style="-fx-fill: #f2b279;" />
+          <Label layoutX="66.0" layoutY="358.0" style="-fx-text-fill: white; -fx-alignment: center;" text="Family">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Circle fx:id="lesson3Circle1" layoutX="288.0" layoutY="502.0" radius="57.0" style="-fx-fill: #f2b279;" />
+      <Label layoutX="315.0" layoutY="453.0" style="-fx-text-fill: white; -fx-alignment: center;" text="2/3">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
     </children>
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-    <stylesheets>
-      <URL value="@styles.css" />
-   </stylesheets>
-</VBox>
+</AnchorPane>

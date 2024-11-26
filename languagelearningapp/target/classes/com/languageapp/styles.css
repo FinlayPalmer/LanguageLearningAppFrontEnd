@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 
 .root {
@@ -24,3 +25,35 @@
 .button:hover {
     -fx-background-color: #F9D9BC;
 }
+=======
+
+.root {
+    -fx-background-color:rgb(122, 149, 172);
+    -fx-font-family: 'Arial';
+}
+    .text-field, .password-field {
+        -fx-background-color: #f0f0f0;
+        -fx-border-color: #cccccc;
+        -fx-border-radius: 5;
+        -fx-padding: 10;
+        -fx-font-size: 16px;
+    }
+    
+    .button {
+        -fx-background-color: #f2b279;
+        -fx-text-fill: white;
+        -fx-font-size: 16px;
+        -fx-background-radius: 5;
+        -fx-padding: 10;
+    }
+    
+    .button:hover {
+        -fx-background-color: #FF8C00;
+    }
+    
+    .circle {
+        -fx-fill: #f2b279;
+        -fx-stroke: #FFFFFF;
+        -fx-stroke-width: 2;
+    }
+>>>>>>> 83fabdd25c57e7d6c27fb4f01efeba3fa0c1ede2

@@ -6,16 +6,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import java.net.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.StartScreenController">
-   <children>
-      <Label text="Hola! (we should also make an app name)" />
-      <Button fx:id="logIn" onAction="#loginClicked" text="Log In" />
-      <Button fx:id="signUp" mnemonicParsing="false" onAction="#signUpClicked" text="Sign Up" />
-   </children>
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
+<<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.StartScreenController">
+    <children>
+        <Label text="Welcome" layoutX="140" layoutY="20" style="-fx-font-size: 24px;" />
+        <Button text="Login" layoutX="140" layoutY="100" onAction="#loginClicked" />
+        <Button text="Sign Up" layoutX="140" layoutY="150" onAction="#signUpClicked" />
+    </children>
+</AnchorPane>
    <stylesheets>
       <URL value="@styles.css" />
    </stylesheets>
-</VBox>

@@ -1,5 +1,7 @@
 package com.languageapp;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,8 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 /**
  * JavaFX App
@@ -19,7 +19,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("startScreen"), 640, 480);
+        scene = new Scene(loadFXML("startScreen"), 375, 667);
         stage.setScene(scene);
         // stage.setFullScreen(true);
         // stage.setResizable(false);
