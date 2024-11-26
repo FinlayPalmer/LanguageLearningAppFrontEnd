@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
 .root {
-    -fx-background-color:blue;
+    -fx-background-color:#88A5BF;
+    -fx-font-family: "Parkinsans";
+}
+
+.label {
+    -fx-font-size: 70px;
+    -fx-text-fill: #274457;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-font-size: 15px;
+    -fx-text-fill: #463525;
+    -fx-background-radius: 5;
+    -fx-background-color: #F2B279;
+    -fx-border-color: white;
+    -fx-border-radius: 1px;
+}
+
+.button:hover {
+    -fx-background-color: #F9D9BC;
 }
