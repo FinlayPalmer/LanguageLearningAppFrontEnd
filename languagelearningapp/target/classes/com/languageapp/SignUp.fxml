@@ -3,6 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import java.net.*?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.SignUpController" prefWidth="375" prefHeight="667" stylesheets="@styles.css">
    <children>
@@ -45,4 +46,7 @@
           </children>
       </VBox>
    </children>
+   <stylesheets>
+      <URL value="@styles.css" />
+    </stylesheets>
 </AnchorPane>

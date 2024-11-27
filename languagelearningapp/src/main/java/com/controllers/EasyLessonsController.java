@@ -35,4 +35,9 @@ public class EasyLessonsController {
         App.setRoot("Profile");
     }
 
+    @FXML
+    private void goToHome() throws IOException {
+        
+    }
+
 }
