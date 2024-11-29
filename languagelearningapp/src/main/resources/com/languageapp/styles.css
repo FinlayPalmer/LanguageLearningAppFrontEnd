@@ -6,20 +6,19 @@
 }
 
 .label {
-  /*-fx-font-size: 70px;*/
   -fx-text-fill: #274457;
   -fx-font-weight: bold;
   -fx-alignment: center;
 }
 
 .button {
-  /*-fx-font-size: 15px;
+  -fx-font-size: 15px;
   -fx-text-fill: #463525;
   -fx-background-radius: 5;
   -fx-background-color: #f2b279;
   -fx-border-color: white;
   -fx-border-radius: 1px;
-  */
+  
   -fx-background-color: #f2b279;
   -fx-text-fill: white;
   -fx-font-size: 16px;
@@ -45,6 +44,20 @@
   -fx-stroke: #ffffff;
   -fx-stroke-width: 2;
 }
+
+.subheading {
+  -fx-font-size: 18px;
+  -fx-font-weight: normal;
+  -fx-text-fill: #274457;
+}
+
+.navigation-bar {
+  -fx-spacing: 20;
+  -fx-alignment: center;
+  -fx-padding: 10;
+  -fx-background-color: #274457;
+}
+
 
 /*.root {
   -fx-background-color: rgb(122, 149, 172);
