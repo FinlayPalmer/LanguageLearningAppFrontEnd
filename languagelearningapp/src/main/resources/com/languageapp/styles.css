@@ -58,6 +58,24 @@
   -fx-background-color: #274457;
 }
 
+.table {
+  -fx-border-color: #274457;
+  -fx-border-width: 2px;
+  -fx-background-color: #f2f2f2;
+  -fx-padding: 10;
+}
+
+.table .column-header {
+  -fx-background-color: #f2b279;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+
+.table .cell {
+  -fx-text-fill: #274457;
+  -fx-font-size: 14px;
+  -fx-padding: 5;
+}
 
 /*.root {
   -fx-background-color: rgb(122, 149, 172);
