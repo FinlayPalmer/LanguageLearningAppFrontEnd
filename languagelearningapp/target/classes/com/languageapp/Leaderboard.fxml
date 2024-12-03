@@ -21,7 +21,7 @@
     <bottom>
         <HBox fx:id="navigationBar" styleClass="navigation-bar">
             <children>
-                <Button text="Home" onAction="#switchToHome" styleClass="nav-button" />
+                <Button text="Home" onAction="#switchToSection" styleClass="nav-button" />
                 <Button text="Completed" onAction="#goToCompletedLessons" styleClass="nav-button" />
                 <Button text="Profile" onAction="#goToProfile" styleClass="nav-button" />
             </children>
