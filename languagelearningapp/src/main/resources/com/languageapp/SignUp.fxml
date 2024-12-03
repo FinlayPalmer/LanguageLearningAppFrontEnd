@@ -9,32 +9,32 @@
     <children>
         <Label text="Sign Up" styleClass="title" />
 
-        <VBox spacing="5">
+        <VBox spacing="0">
             <Label text="First Name" styleClass="subheading" />
             <TextField fx:id="firstNameField" promptText="Enter your first name" styleClass="text-field" />
         </VBox>
         
-        <VBox spacing="5">
+        <VBox spacing="0">
             <Label text="Last Name" styleClass="subheading" />
             <TextField fx:id="lastNameField" promptText="Enter your last name" styleClass="text-field" />
         </VBox>
         
-        <VBox spacing="5">
+        <VBox spacing="0">
             <Label text="Email" styleClass="subheading" />
             <TextField fx:id="emailField" promptText="Enter your email" styleClass="text-field" />
         </VBox>
         
-        <VBox spacing="5">
+        <VBox spacing="0">
             <Label text="Date of Birth" styleClass="subheading" />
             <TextField fx:id="dobField" promptText="Enter your date of birth" styleClass="text-field" />
         </VBox>
         
-        <VBox spacing="5">
+        <VBox spacing="0">
             <Label text="Username" styleClass="subheading" />
             <TextField fx:id="usernameField" promptText="Enter your username" styleClass="text-field" />
         </VBox>
         
-        <VBox spacing="5">
+        <VBox spacing="0">
             <Label text="Password" styleClass="subheading" />
             <PasswordField fx:id="passwordField" promptText="Enter your password" styleClass="password-field" />
         </VBox>
