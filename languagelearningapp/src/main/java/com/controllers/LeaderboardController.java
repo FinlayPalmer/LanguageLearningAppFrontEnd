@@ -45,8 +45,8 @@ public class LeaderboardController {
     } 
 
     @FXML
-    private void switchToHome() throws Exception {
-        App.setRoot("HomeScreen");
+    private void switchToSection() throws Exception {
+        App.setRoot("Section");
     }
 
     @FXML
