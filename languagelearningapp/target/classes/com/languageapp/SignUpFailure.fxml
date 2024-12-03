@@ -9,7 +9,7 @@
     <children>
         <Label text="Sign Up" styleClass="title" />
 
-        <Label text="Your email or username was not unique. Please try again." styleClass="message" />
+        <Label text="Your email or username was not unique. Please try again." />
 
         <VBox spacing="0">
             <Label text="First Name" styleClass="subheading" />
