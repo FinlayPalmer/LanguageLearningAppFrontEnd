@@ -8,7 +8,7 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.SectionController">
    <children>
-      <Label text="Section Screen" />
+      <Label text="Section Screen" styleClass="title"/>
       <Button fx:id="easy" onAction="#switchToEasy" text="Easy" />
       <Button fx:id="medium" onAction="#switchToMedium" text="Medium" />
       <Button fx:id="difficult" onAction="#switchToDifficult" text="Difficult" />

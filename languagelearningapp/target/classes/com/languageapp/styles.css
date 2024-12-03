@@ -11,14 +11,11 @@
   -fx-alignment: center;
 }
 
-.button {
-  -fx-font-size: 15px;
-  -fx-text-fill: #463525;
-  -fx-background-radius: 5;
-  -fx-background-color: #f2b279;
-  -fx-border-color: white;
-  -fx-border-radius: 1px;
-  
+.title {
+  -fx-font-size: 35px;
+}
+
+.button {  
   -fx-background-color: #f2b279;
   -fx-text-fill: white;
   -fx-font-size: 16px;
@@ -76,20 +73,3 @@
   -fx-font-size: 14px;
   -fx-padding: 5;
 }
-
-/*.root {
-  -fx-background-color: rgb(122, 149, 172);
-  -fx-font-family: "Arial";
-}
-
-.button {
-  -fx-background-color: #f2b279;
-  -fx-text-fill: white;
-  -fx-font-size: 16px;
-  -fx-background-radius: 5;
-  -fx-padding: 10;
-}
-
-.button:hover {
-  -fx-background-color: #ff8c00;
-}*/

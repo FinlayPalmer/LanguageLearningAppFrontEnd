@@ -8,7 +8,7 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.ProfileController">
     <children>
-        <Label text="Profile" />
+        <Label text="Profile" styleClass="title"/>
         <Button fx:id="back" onAction="#switchToSection" text="Back to Section" />
         <Button fx:id="logout" onAction="#switchToStart" text="Logout" />
         <Button fx:id="resetPassword" onAction="#switchToResetPassword" text="Reset Password" />
