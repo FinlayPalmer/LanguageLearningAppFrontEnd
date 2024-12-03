@@ -5,28 +5,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import java.net.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.LoginController" prefWidth="375" prefHeight="667" stylesheets="@styles.css">
-   <children>
-      <VBox alignment="CENTER" layoutX="50" layoutY="50" prefWidth="275" spacing="20">
-          <children>
-              <Label text="Login" style="-fx-font-size: 27px; -fx-font-weight: bold; -fx-text-fill: white;" />
-              
-              <VBox spacing="5">
-                  <Label text="Username" />
-                  <TextField fx:id="usernameField" promptText="Enter your username" />
-              </VBox>
-              
-              <VBox spacing="5">
-                  <Label text="Password" />
-                  <PasswordField fx:id="passwordField" promptText="Enter your password" />
-              </VBox>
-              
-              <Button text="Submit" onAction="#switchToSection" style="-fx-background-color: #FFA500; -fx-text-fill: white; -fx-font-weight: bold;" />
-              <Button text="Back to Start" onAction="#switchToStart" style="-fx-background-color: #FFA500; -fx-text-fill: white; -fx-font-weight: bold;" />
-          </children>
-      </VBox>
-   </children>
-   <stylesheets>
-      <URL value="@styles.css" />
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.LoginController">
+    <children>
+        <Label text="Login" style="-fx-font-size: 27px; -fx-font-weight: bold; -fx-text-fill: white;" />
+        <VBox spacing="5">
+            <Label text="Username" />
+            <TextField fx:id="usernameField" promptText="Enter your username" />
+        </VBox>
+        
+        <VBox spacing="5">
+            <Label text="Password" />
+            <PasswordField fx:id="passwordField" promptText="Enter your password" />
+        </VBox>
+        <Button text="Submit" onAction="#switchToSection"/> <!--style="-fx-background-color: #FFA500; -fx-text-fill: white; -fx-font-weight: bold;" -->
+        <Button text="Back to Start" onAction="#switchToStart"/> <!--style="-fx-background-color: #FFA500; -fx-text-fill: white; -fx-font-weight: bold;" -->
+    </children>
+    <stylesheets>
+    <URL value="@styles.css" />
     </stylesheets>
-</AnchorPane>
+</VBox>
