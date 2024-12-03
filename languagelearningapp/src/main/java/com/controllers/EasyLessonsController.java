@@ -26,6 +26,9 @@ public class EasyLessonsController {
     private Circle lesson3Circle;
 
     @FXML
+    private Circle lesson4Circle;
+
+    @FXML
     private void goToCompletedLessons() throws IOException {
         App.setRoot("CompletedLessons");
     }
@@ -34,10 +37,25 @@ public class EasyLessonsController {
     private void goToProfile() throws IOException {
         App.setRoot("Profile");
     }
-
     @FXML
-    private void goToHome() throws IOException {
-        
+    private void handleColorLesson() throws IOException {
+        System.out.println("Navigating to Colors lesson");
+        App.setRoot("ColorsLesson"); 
+    }
+    @FXML
+    private void handleGreetingLesson() throws IOException {
+        System.out.println("Navigating to Greetings Lesson");
+        App.setRoot("GreetingsLesson");
     }
 
+    @FXML
+    private void handleFamilyLesson() throws IOException {
+        System.out.println("Navigating to Family Lesson");
+        App.setRoot("FamilyLesson");
+    }
+    @FXML
+    private void handleLockedLesson() throws IOException {
+        System.out.println("Navigating to Lesson Progress");
+        App.setRoot("LockedLesson");
+    }
 }
