@@ -51,6 +51,8 @@ public class SignUpController {
                                                    passwordField.getText()).startsWith("Success"))
             App.setRoot("Section");
         // If unsuccessful, the user is sent to a sign up screen displaying an error message
-        else */ App.setRoot("SignUpFailure");
+        else App.setRoot("SignUpFailure");
+        */
+        App.setRoot("Section");  // delete this line once the method is ready to be used
     }
 }
