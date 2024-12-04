@@ -3,6 +3,8 @@ package com.controllers;
 import java.io.IOException;
 
 import com.languageapp.App;
+import com.model.LanguageAppFacade;
+import com.model.Account;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
@@ -10,12 +12,12 @@ import javafx.scene.control.TextField;
 
 public class LoginController {
 
-@FXML
+    @FXML
     private TextField usernameField;
 
     @FXML
     private PasswordField passwordField;
-    
+
     @FXML
     private void switchToStart() throws IOException {
         App.setRoot("StartScreen");
@@ -23,9 +25,15 @@ public class LoginController {
 
     @FXML
     private void switchToSection() throws IOException {
+        LanguageAppFacade languageAppFacade = LanguageAppFacade.getInstance();
         String username = usernameField.getText();
         String password = passwordField.getText();
         System.out.println("Username: " + username + ", Password: " + password);
-        App.setRoot("Section");
+        Account account = languageAppFacade.login(username, password);
+        if (account != null) {
+            App.setRoot("Section");
+        } else {
+            
+        }
     }
 }
