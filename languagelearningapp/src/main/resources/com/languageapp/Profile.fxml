@@ -10,8 +10,10 @@
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.ProfileController">
     <children>
         <Label styleClass="title" text="Profile" />
-        <Button fx:id="logout" onAction="#switchToStart" text="Logout" />
+
         <Button fx:id="resetPassword" onAction="#switchToResetPassword" text="Reset Password" />
+        <Button fx:id="logout" onAction="#switchToStart" text="Logout" />
+        
       <HBox prefHeight="100.0" prefWidth="200.0" styleClass="navigation-bar">
          <children>
             <Button mnemonicParsing="false" onAction="#switchToSection" text="Home" />
