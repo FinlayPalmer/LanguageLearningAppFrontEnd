@@ -42,18 +42,18 @@ public class LanguageAppFacade {
      * @param password User's password
      * @return The account user logs into, null if their account did not exist
      */
-    public String login(String username, String password) {
+    public Account login(String username, String password) {
         AccountList accountList = AccountList.getInstance();
         if (accountList.getAccount(username, password) != null
                 && accountList.getAccount(username, password).isMatch(username, password)) {
             account = accountList.getAccount(username, password);
             // Return a welcome message and the account details if their account is valid
-            return "You have successfully logged in!" + account;
+            return /*"You have successfully logged in!" + */ account;
         }
         // Set current account to null and print an error message if their account was
         // not valid
         account = null;
-        return "Your account was not able to be verified.";
+        return /* "Your account was not able to be verified."*/ null;
     }
 
     /**
