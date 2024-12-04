@@ -41,10 +41,8 @@ public class SignUpController {
         App.setRoot("Section");
     }
     
-    // !!! This is commented out until the strings can be properly checked against the AccountList - matt
     @FXML
     private void submitSignUp() throws IOException {
-        /*
         // Sends the data from the form to the signUp method in Facade; if successful, the user is advanced to the next screen
         if (LanguageAppFacade.getInstance().signUp(firstNameField.getText(), lastNameField.getText(), 
                                                    emailField.getText(), dobField.getText(), usernameField.getText(),
@@ -52,7 +50,5 @@ public class SignUpController {
             App.setRoot("Section");
         // If unsuccessful, the user is sent to a sign up screen displaying an error message
         else App.setRoot("SignUpFailure");
-        */
-        App.setRoot("Section");  // delete this line once the method is ready to be used
     }
 }
