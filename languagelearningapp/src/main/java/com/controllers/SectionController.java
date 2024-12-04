@@ -1,6 +1,8 @@
 package com.controllers;
 
 import java.io.IOException;
+
+import javafx.scene.image.ImageView;
 import javafx.fxml.FXML;
 import com.languageapp.App;
 
@@ -37,6 +39,17 @@ public class SectionController {
     @FXML
     private void switchToLeaderboard() throws IOException {
         App.setRoot("Leaderboard");
+    }
+
+    @FXML
+    private void switchToSection() throws IOException {
+        App.setRoot("Section");
+    }
+
+    // This should point to the current lesson not always colors!!! - matt
+    @FXML
+    private void switchToCurrentLesson() throws IOException {
+        App.setRoot("ColorsLesson");
     }
 
 }
