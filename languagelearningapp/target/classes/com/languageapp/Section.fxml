@@ -14,7 +14,7 @@
       <Button fx:id="medium" onAction="#switchToMedium" text="Medium" />
       <Button fx:id="difficult" onAction="#switchToDifficult" text="Difficult" />
       <Button fx:id="leaderboard" onAction="#switchToLeaderboard" text="Leaderboard" />
-      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="navigation-bar">
+      <HBox styleClass="navigation-bar">
          <children>
             <Button mnemonicParsing="false" text="Home" />
             <Button mnemonicParsing="false" onAction="#switchToCurrentLesson" text="Lesson" />
