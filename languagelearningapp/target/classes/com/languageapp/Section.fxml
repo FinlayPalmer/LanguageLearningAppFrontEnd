@@ -25,6 +25,11 @@
             <Button mnemonicParsing="false" text="Home" />
             <Button mnemonicParsing="false" onAction="#switchToCurrentLesson" text="Lesson" />
             <Button mnemonicParsing="false" onAction="#switchToProfile" text="Profile" />
+            <ImageView fitHeight="64.0" fitWidth="64.0" onMouseClicked="#switchToHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/home.jpg" />
+               </image>
+            </ImageView>
          </children>
       </HBox>
    </children>
