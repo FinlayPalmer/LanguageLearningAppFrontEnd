@@ -6,7 +6,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.SectionController">
@@ -20,18 +19,29 @@
       <Button fx:id="easy" onAction="#switchToEasy" text="Easy" />
       <Button fx:id="medium" onAction="#switchToMedium" text="Medium" />
       <Button fx:id="difficult" onAction="#switchToDifficult" text="Difficult" />
-      <HBox styleClass="navigation-bar">
-         <children>
-            <Button mnemonicParsing="false" text="Home" />
-            <Button mnemonicParsing="false" onAction="#switchToCurrentLesson" text="Lesson" />
-            <Button mnemonicParsing="false" onAction="#switchToProfile" text="Profile" />
-            <ImageView fitHeight="64.0" fitWidth="64.0" onMouseClicked="#switchToHome" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@images/home.jpg" />
-               </image>
-            </ImageView>
-         </children>
-      </HBox>
+
+      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToCurrentLesson" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/lesson.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToSection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/home.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets right="200.0" top="-85.0" />
+         </VBox.margin>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToProfile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/profile.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets right="-200.0" top="-85.0" />
+         </VBox.margin>
+      </ImageView>
+      
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

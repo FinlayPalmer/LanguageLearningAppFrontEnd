@@ -41,6 +41,11 @@ public class SectionController {
         App.setRoot("Leaderboard");
     }
 
+    @FXML
+    private void switchToSection() throws IOException {
+        App.setRoot("Section");
+    }
+
     // This should point to the current lesson not always colors!!! - matt
     @FXML
     private void switchToCurrentLesson() throws IOException {
