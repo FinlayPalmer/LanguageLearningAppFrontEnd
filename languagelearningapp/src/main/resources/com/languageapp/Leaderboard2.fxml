@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.LeaderboardController" stylesheets="@styles.css">
+    <top>
+        <Label text="Leaderboard" styleClass="title" />
+    </top>
+
+    <center>
+        <TableView fx:id="leaderboardTable" styleClass="table">
+            <columns>
+                <TableColumn text="Rank" fx:id="rankColumn" />
+                <TableColumn text="Username" fx:id="usernameColumn" />
+                <TableColumn text="Lessons" fx:id="lessonsColumn" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox fx:id="navigationBar" styleClass="navigation-bar">
+            <children>
+                <Button text="Home" onAction="#switchToSection" styleClass="nav-button" />
+                <Button text="Completed" onAction="#goToCompletedLessons" styleClass="nav-button" />
+                <Button text="Profile" onAction="#goToProfile" styleClass="nav-button" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>
