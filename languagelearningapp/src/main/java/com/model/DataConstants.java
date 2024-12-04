@@ -7,10 +7,10 @@ package com.model;
 public class DataConstants {
 
     // File paths
-    public static final String ACCOUNTS_FILE = "/data/Account.json";
-    public static final String LESSONS_FILE = "/data/Lessons.json";
-    public static final String WORD_FILE = "/data/Word.json";
-    public static final String PHRASE_FILE = "/data/Phrase.json";
+    public static final String ACCOUNTS_FILE = "/com/data/Account.json";
+    public static final String LESSONS_FILE = "/com/data/Lessons.json";
+    public static final String WORD_FILE = "/com/data/Word.json";
+    public static final String PHRASE_FILE = "/com/data/Phrase.json";
 
 
     // JSON keys for Account
