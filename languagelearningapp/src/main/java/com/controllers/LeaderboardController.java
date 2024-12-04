@@ -17,7 +17,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 public class LeaderboardController {
 
-    /*@FXML private TableView<LeaderboardEntry> leaderboardTable;
+    @FXML private TableView<LeaderboardEntry> leaderboardTable;
     @FXML private TableColumn<LeaderboardEntry, Integer> rankColumn;
     @FXML private TableColumn<LeaderboardEntry, String> usernameColumn;
     @FXML private TableColumn<LeaderboardEntry, Integer> lessonsColumn;
@@ -44,7 +44,7 @@ public class LeaderboardController {
             new LeaderboardEntry(9, "astha894", 37),
             new LeaderboardEntry(10, "sguzz963", 36)
         );
-    } */
+    }
 
     @FXML
     private void switchToProfile() throws IOException {
@@ -62,7 +62,6 @@ public class LeaderboardController {
         App.setRoot("ColorsLesson");
     }
 
-    /* 
     public static class LeaderboardEntry {
         private final Integer rank;
         private final String username;
@@ -85,5 +84,5 @@ public class LeaderboardController {
         public Integer getLessons() {
             return lessons;
         }
-    } */
+    }
 }
