@@ -12,32 +12,32 @@
         <Label styleClass="title" text="Sign Up" />
 
         <VBox spacing="5">
-            <Label styleClass="subheading" text="First Name" />
+            <Label text="First Name" styleClass="subheading" />
             <TextField fx:id="firstNameField" promptText="Enter your first name" styleClass="text-field" />
         </VBox>
         
         <VBox spacing="5">
-            <Label styleClass="subheading" text="Last Name" />
+            <Label text="Last Name" styleClass="subheading" />
             <TextField fx:id="lastNameField" promptText="Enter your last name" styleClass="text-field" />
         </VBox>
         
         <VBox spacing="5">
-            <Label styleClass="subheading" text="Email" />
+            <Label text="Email" styleClass="subheading" />
             <TextField fx:id="emailField" promptText="Enter your email" styleClass="text-field" />
         </VBox>
         
         <VBox spacing="5">
-            <Label styleClass="subheading" text="Date of Birth" />
+            <Label text="Date of Birth" styleClass="subheading" />
             <TextField fx:id="dobField" promptText="Enter your date of birth" styleClass="text-field" />
         </VBox>
         
         <VBox spacing="5">
-            <Label styleClass="subheading" text="Username" />
+            <Label text="Username" styleClass="subheading" />
             <TextField fx:id="usernameField" promptText="Enter your username" styleClass="text-field" />
         </VBox>
         
         <VBox spacing="5">
-            <Label styleClass="subheading" text="Password" />
+            <Label text="Password" styleClass="subheading" />
             <PasswordField fx:id="passwordField" promptText="Enter your password" styleClass="password-field" />
         </VBox>
         
