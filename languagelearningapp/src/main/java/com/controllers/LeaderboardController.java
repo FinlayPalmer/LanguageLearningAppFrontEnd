@@ -1,5 +1,7 @@
 package com.controllers;
 
+import java.io.IOException;
+
 import com.languageapp.App;
 
 import javafx.collections.FXCollections;
@@ -45,20 +47,22 @@ public class LeaderboardController {
     } */
 
     @FXML
-    private void switchToSection() throws Exception {
-        App.setRoot("Section");
-    }
-
-    @FXML
-    private void goToCompletedLessons() throws Exception {
-        App.setRoot("CompletedLessons");
-    }
-
-    @FXML
-    private void goToProfile() throws Exception {
+    private void switchToProfile() throws IOException {
         App.setRoot("Profile");
     }
 
+    @FXML
+    private void switchToSection() throws IOException {
+        App.setRoot("Section");
+    }
+
+    // This should point to the current lesson not always colors!!! - matt
+    @FXML
+    private void switchToCurrentLesson() throws IOException {
+        App.setRoot("ColorsLesson");
+    }
+
+    /* 
     public static class LeaderboardEntry {
         private final Integer rank;
         private final String username;
@@ -81,5 +85,5 @@ public class LeaderboardController {
         public Integer getLessons() {
             return lessons;
         }
-    }
+    } */
 }
