@@ -68,7 +68,7 @@ public abstract class Question {
     /**
      * Retrieves the type of the question
      */
-    abstract String getQuestionType();
+    public abstract String getQuestionType();
 
     /**
      * Retrives an ArrayList of the Words involved in the Question
