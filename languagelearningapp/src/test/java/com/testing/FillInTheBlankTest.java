@@ -3,6 +3,8 @@ package com.testing;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import com.model.FillInTheBlank;
+import com.model.Phrase;
 
 import java.util.ArrayList;
 /**
@@ -61,7 +63,7 @@ class FillInTheBlankTest {
     @Test
     void testSetBlankPosition() {
         fillInTheBlank.setBlankPosition(3);
-        assertEquals(3, fillInTheBlank.blankPosition, "Blank position should be updated to 3");
+        assertEquals(3, fillInTheBlank.getBlankPosition(), "Blank position should be updated to 3");
         assertEquals("prueba", fillInTheBlank.getCorrectAnswer(), "The correct answer should be 'prueba' after updating the blank position.");
     }
 
