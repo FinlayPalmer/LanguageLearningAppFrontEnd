@@ -9,14 +9,16 @@ import com.model.Account;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 
 public class LoginController {
 
     @FXML
     private TextField usernameField;
-
     @FXML
     private PasswordField passwordField;
+    @FXML
+    private Label errorMessage;
 
     @FXML
     private void switchToStart() throws IOException {
@@ -33,7 +35,7 @@ public class LoginController {
         if (account != null) {
             App.setRoot("Section");
         } else {
-            
+            errorMessage.setText("Your account was not able to be verified");
         }
     }
 }

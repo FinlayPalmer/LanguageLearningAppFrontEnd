@@ -23,6 +23,7 @@
 
               <Button onAction="#switchToSection" styleClass="button" text="Submit" />
         <Button onAction="#switchToStart" styleClass="button" text="Back to Start" />
+      <Label fx:id="errorMessage" styleClass="errorMessage" textAlignment="CENTER" wrapText="true" />
     </children>
    <padding>
       <Insets left="25.0" right="25.0" />
