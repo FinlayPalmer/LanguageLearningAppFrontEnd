@@ -10,8 +10,8 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.LessonController">
    <children>
-      <Label styleClass="title" text="Colors Lesson" />
-      <Button styleClass="button" text="Flashcard screen" onMouseClicked="#switchToFlashcard" />
+      <Label fx:id="lessonName" styleClass="title" />
+      <Button onMouseClicked="#switchToFlashcard" styleClass="button" text="Flashcard screen" />
 
       <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToLesson" pickOnBounds="true" preserveRatio="true">
          <image>

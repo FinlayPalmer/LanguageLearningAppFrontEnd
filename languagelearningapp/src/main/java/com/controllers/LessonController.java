@@ -3,13 +3,23 @@ package com.controllers;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 
 import com.languageapp.App;
+import com.model.LanguageAppFacade;
 
 /**
  * @author Matthew Botteon
  */
 public class LessonController {
+
+    @FXML
+    private Label lessonName;
+
+    @FXML
+    private void initialize() {
+        lessonName.setText(LanguageAppFacade.getInstance().getLesson().getTitle() + " Lesson");
+    }
 
     @FXML
     private void switchToPrimary() throws IOException {

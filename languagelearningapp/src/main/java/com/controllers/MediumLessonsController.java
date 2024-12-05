@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 import com.languageapp.App;
+import com.model.LanguageAppFacade;
 import com.model.LessonList;
 
 /**
@@ -48,6 +49,36 @@ public class MediumLessonsController {
 
     @FXML
     private void switchToLesson() throws IOException {
+        App.setRoot("Lesson");
+    }
+
+    @FXML
+    private void switchToLessonOne() throws IOException {
+        LanguageAppFacade.getInstance().startNewLesson(one.getText());
+        App.setRoot("Lesson");
+    }
+
+    @FXML
+    private void switchToLessonTwo() throws IOException {
+        LanguageAppFacade.getInstance().startNewLesson(two.getText());
+        App.setRoot("Lesson");
+    }
+
+    @FXML
+    private void switchToLessonThree() throws IOException {
+        LanguageAppFacade.getInstance().startNewLesson(three.getText());
+        App.setRoot("Lesson");
+    }
+
+    @FXML
+    private void switchToLessonFour() throws IOException {
+        LanguageAppFacade.getInstance().startNewLesson(four.getText());
+        App.setRoot("Lesson");
+    }
+
+    @FXML
+    private void switchToLessonFive() throws IOException {
+        LanguageAppFacade.getInstance().startNewLesson(five.getText());
         App.setRoot("Lesson");
     }
 

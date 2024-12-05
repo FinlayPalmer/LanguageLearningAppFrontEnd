@@ -48,6 +48,36 @@ public class EasyLessonsController {
     }
 
     @FXML
+    private void switchToLessonOne() throws IOException {
+        LanguageAppFacade.getInstance().startNewLesson(one.getText());
+        App.setRoot("Lesson");
+    }
+
+    @FXML
+    private void switchToLessonTwo() throws IOException {
+        LanguageAppFacade.getInstance().startNewLesson(two.getText());
+        App.setRoot("Lesson");
+    }
+
+    @FXML
+    private void switchToLessonThree() throws IOException {
+        LanguageAppFacade.getInstance().startNewLesson(three.getText());
+        App.setRoot("Lesson");
+    }
+
+    @FXML
+    private void switchToLessonFour() throws IOException {
+        LanguageAppFacade.getInstance().startNewLesson(four.getText());
+        App.setRoot("Lesson");
+    }
+
+    @FXML
+    private void switchToLessonFive() throws IOException {
+        LanguageAppFacade.getInstance().startNewLesson(five.getText());
+        App.setRoot("Lesson");
+    }
+
+    @FXML
     private void switchToProfile() throws IOException {
         App.setRoot("Profile");
     }

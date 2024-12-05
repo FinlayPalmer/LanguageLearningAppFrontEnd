@@ -197,7 +197,7 @@ public class LanguageAppFacade {
         currentLesson = lessonList.getLesson(lessonName);
         Question currentQuestion = currentLesson.startLesson();
         if (currentQuestion != null) {
-            Narrator.playSound(currentQuestion.getQuestionText());
+            //Narrator.playSound(currentQuestion.getQuestionText());
             return currentQuestion;
         }
         return null;
