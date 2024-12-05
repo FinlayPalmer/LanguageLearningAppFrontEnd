@@ -58,7 +58,7 @@ public abstract class Question {
     /**
      * Retrieves the correct answer for the question.
      */
-    abstract String getCorrectAnswer();
+    public abstract String getCorrectAnswer();
 
     /**
      * Checks if the user's answer is equal to the correct answer

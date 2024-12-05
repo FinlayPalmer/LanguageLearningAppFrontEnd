@@ -4,20 +4,22 @@ import java.util.ArrayList;
 
 /**
  * @author Matthew Botteon and Astha Singh
- * Creates a Fill in the Blank question type with a blank index in an array of words, requiring the user to fill it in.
+ *         Creates a Fill in the Blank question type with a blank index in an
+ *         array of words, requiring the user to fill it in.
  */
 public class FillInTheBlank extends Question {
     private String title;
     private Phrase questionText;
     private String userAnswer;
-    int blankPosition;
+    private int blankPosition;
     private String questionType;
 
     /**
      * Creates a new Fill in the Blank question with a title, text, and answer.
      * 
-     * @param title The name of the question.
-     * @param questionText The text of the question, to give the missing blank context.
+     * @param title         The name of the question.
+     * @param questionText  The text of the question, to give the missing blank
+     *                      context.
      * @param blankPosition The position of the missing word within the given text.
      */
     public FillInTheBlank(String title, Phrase questionText, int blankPosition) {
@@ -97,19 +99,31 @@ public class FillInTheBlank extends Question {
     }
 
     /**
+     * Returns the blank position
+     * 
+     * @return blankPosition
+     */
+    public int getBlankPosition() {
+        return blankPosition;
+    }
+
+    /**
      * Returns the question text as a String with a blank space
      */
     public String toString() {
         String string = "--------------------\n" + questionType + "\nEnglish Meaning: " + title + "\n";
-        for(int i = 0; i < questionText.getPhraseText().size(); i++) {
-            if(i != blankPosition)
+        for (int i = 0; i < questionText.getPhraseText().size(); i++) {
+            if (i != blankPosition)
                 string = string + questionText.getPhraseText().get(i) + " ";
-            else string = string.concat(" _______ ");
-        } return string;
+            else
+                string = string.concat(" _______ ");
+        }
+        return string;
     }
 
     /**
-     * Returns the Spanish words in the Question as an ArrayList, necessary for Flashcard and Matching
+     * Returns the Spanish words in the Question as an ArrayList, necessary for
+     * Flashcard and Matching
      * 
      * @return An ArrayList of Spanish words
      */
@@ -119,7 +133,8 @@ public class FillInTheBlank extends Question {
     }
 
     /**
-     * Returns the Phrase in the question, necessary for FillInTheBlank and UserTextEntry
+     * Returns the Phrase in the question, necessary for FillInTheBlank and
+     * UserTextEntry
      * 
      * @return A phrase from the question
      */

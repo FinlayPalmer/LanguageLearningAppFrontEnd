@@ -2,9 +2,13 @@ package com.testing;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;/**
-* @author Astha Singh
-*/
+import static org.junit.jupiter.api.Assertions.*;
+import com.model.Flashcard;
+import com.model.Word;
+
+/**
+ * @author Astha Singh
+ */
 
 class FlashcardTest {
     private Flashcard flashcard;
