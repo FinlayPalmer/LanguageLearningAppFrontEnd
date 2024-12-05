@@ -14,6 +14,7 @@ module com.languageapp {
     requires software.amazon.awssdk.awscore;
     requires software.amazon.eventstream;
     requires com.google.gson;
+    requires javafx.graphics;
 
     opens com.languageapp to javafx.fxml;
     exports com.languageapp;

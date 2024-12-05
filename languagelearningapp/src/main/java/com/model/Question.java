@@ -63,7 +63,7 @@ public abstract class Question {
     /**
      * Checks if the user's answer is equal to the correct answer
      */
-    abstract boolean isAnswerCorrect(String answer);
+    public abstract boolean isAnswerCorrect(String answer);
 
     /**
      * Retrieves the type of the question
@@ -73,10 +73,10 @@ public abstract class Question {
     /**
      * Retrives an ArrayList of the Words involved in the Question
      */
-    abstract ArrayList<Word> getWordsInQuestion();
+    public abstract ArrayList<Word> getWordsInQuestion();
 
     /**
      * Retrives the Phrase involved in the Question
      */
-    abstract Phrase getPhraseInQuestion();
+    public abstract Phrase getPhraseInQuestion();
 }
