@@ -51,4 +51,11 @@ public class LessonController {
         App.setRoot("Lesson");
     }
 
+    @FXML
+    private void switchToQuestion() throws IOException {
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Flashcard"))
+            App.setRoot("Flashcard");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
+            App.setRoot("Matching");
+    }
 }

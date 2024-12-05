@@ -31,7 +31,7 @@
          </children>
       </HBox>
 
-      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToLesson" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToPrevQuestion" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/leftarrow.png" />
          </image>
@@ -44,7 +44,7 @@
             <Insets right="200.0" top="-85.0" />
          </VBox.margin>
       </ImageView>
-      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToFlashcard" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToNextQuestion" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/rightarrow.png" />
          </image>

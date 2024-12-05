@@ -284,7 +284,7 @@ public class LanguageAppFacade {
         currentLesson.moveToNextQuestion();
         Question nextQuestion = getQuestion();
         if (nextQuestion != null) {
-            Narrator.playSound(nextQuestion.getQuestionText());
+            //Narrator.playSound(nextQuestion.getQuestionText());
             return nextQuestion;
         }
         return null;

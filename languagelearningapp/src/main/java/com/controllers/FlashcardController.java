@@ -51,7 +51,9 @@ public class FlashcardController {
     private void switchToNextQuestion() throws IOException {
         currentQuestion = LanguageAppFacade.getInstance().nextQuestion();
         if (currentQuestion.getQuestionType().equals("Flashcard"))
-        App.setRoot("Flashcard");
+            App.setRoot("Flashcard");
+        if (currentQuestion.getQuestionType().equals("Matching"))
+            App.setRoot("Matching");
     }
 
     @FXML

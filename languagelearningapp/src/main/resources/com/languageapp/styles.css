@@ -30,6 +30,13 @@
   -fx-font-size: 25px;
 }
 
+.matching {
+  -fx-border-color:black;
+  -fx-border-width: 3; 
+  -fx-border-style: solid;
+  -fx-font-size: 18px;
+}
+
 .button:hover {
   -fx-background-color: #f9d9bc;
 }
