@@ -21,6 +21,7 @@ public class LanguageAppFacade {
      */
     private LanguageAppFacade() {
         account = new Account(null);
+        currentLesson = LessonList.getInstance().getListOfAllLessons().get(0);
     }
 
     /**

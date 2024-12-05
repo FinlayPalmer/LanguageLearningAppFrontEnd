@@ -3,39 +3,13 @@ package com.controllers;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 
 import com.languageapp.App;
-import com.model.LessonList;
 
 /**
  * @author Matthew Botteon
  */
-public class EasyLessonsController {
-
-    private LessonList list;
-
-    @FXML
-    private Button one;
-    @FXML
-    private Button two;
-    @FXML
-    private Button three;
-    @FXML
-    private Button four;
-    @FXML
-    private Button five;
-
-    @FXML
-    private void initialize() {
-        list = LessonList.getInstance();
-        one.setText(list.getListOfAllLessons().get(0).getTitle());
-        two.setText(list.getListOfAllLessons().get(1).getTitle());
-        three.setText(list.getListOfAllLessons().get(2).getTitle());
-        four.setText(list.getListOfAllLessons().get(3).getTitle());
-        five.setText(list.getListOfAllLessons().get(4).getTitle());
-    }
+public class ColorsLessonController {
 
     @FXML
     private void switchToPrimary() throws IOException {
