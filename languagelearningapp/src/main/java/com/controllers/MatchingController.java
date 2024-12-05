@@ -45,13 +45,13 @@ public class MatchingController {
      @FXML
     private ChoiceBox<String> answer1;
     @FXML
-    private ChoiceBox<?> answer2;
+    private ChoiceBox<String> answer2;
     @FXML
-    private ChoiceBox<?> answer3;
+    private ChoiceBox<String> answer3;
     @FXML
-    private ChoiceBox<?> answer4;
+    private ChoiceBox<String> answer4;
     @FXML
-    private ChoiceBox<?> answer5;
+    private ChoiceBox<String> answer5;
 
 
     @FXML
@@ -69,17 +69,15 @@ public class MatchingController {
         choice4.setText(matchingQuestion.getSpanishWords().get(3).getWordText());
         choice5.setText(matchingQuestion.getSpanishWords().get(4).getWordText());
 
-        String choices[] = new String[5];
-        for (int i = 0; i < matchingQuestion.getOptions().size(); i++)
-            choices[i] = text.concat(matchingQuestion.getOptions().get(i));
-
         // Set choices on the right side
-        answer1 = new ChoiceBox<>(FXCollections.observableArrayList(choices));
-        answer2 = new ChoiceBox<>(FXCollections.observableArrayList(choices));
-        answer3 = new ChoiceBox<>(FXCollections.observableArrayList(choices));
-        answer4 = new ChoiceBox<>(FXCollections.observableArrayList(choices));
-        answer5 = new ChoiceBox<>(FXCollections.observableArrayList(choices));
-
+        for (int i = 0; i < matchingQuestion.getOptions().size(); i++) {
+            answer1.getItems().add(matchingQuestion.getOptions().get(i));
+            answer2.getItems().add(matchingQuestion.getOptions().get(i));
+            answer3.getItems().add(matchingQuestion.getOptions().get(i));
+            answer4.getItems().add(matchingQuestion.getOptions().get(i));
+            answer5.getItems().add(matchingQuestion.getOptions().get(i));
+        }
+        
         text = " ";
         for (int i = 0; i < matchingQuestion.getOptions().size(); i++)
             text = text.concat(matchingQuestion.getOptions().get(i) + " ");
@@ -142,7 +140,14 @@ public class MatchingController {
 
     @FXML
     private void checkAnswer() throws IOException {
-        if(LanguageAppFacade.getInstance().getQuestion().isAnswerCorrect(answer.getText())) {
+        String answer = "";
+        answer = answer + answer1.getSelectionModel().getSelectedItem() + " ";
+        answer = answer + answer2.getSelectionModel().getSelectedItem() + " ";
+        answer = answer + answer3.getSelectionModel().getSelectedItem() + " ";
+        answer = answer + answer4.getSelectionModel().getSelectedItem() + " ";
+        answer = answer + answer5.getSelectionModel().getSelectedItem() + " ";
+
+        if(LanguageAppFacade.getInstance().getQuestion().isAnswerCorrect(answer)) {
             check.setVisible(true);
             wrong.setVisible(false);
         } else {
