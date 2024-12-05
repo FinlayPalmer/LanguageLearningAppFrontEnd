@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="667" prefWidth="375" spacing="15" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.SignUpController">
+<VBox alignment="CENTER" prefHeight="667" prefWidth="375" spacing="10.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.SignUpController">
     <children>
         <Label styleClass="title" text="Sign Up" />
       <Label fx:id="errorMessage" styleClass="errorMessage" textAlignment="CENTER" wrapText="true" />

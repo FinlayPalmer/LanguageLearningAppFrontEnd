@@ -77,7 +77,6 @@
 .table .cell {
   -fx-text-fill: #274457;
   -fx-font-size: 14px;
-  -fx-padding: 5;
 }
 
 .errorMessage {

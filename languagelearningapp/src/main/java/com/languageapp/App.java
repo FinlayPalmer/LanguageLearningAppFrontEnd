@@ -20,12 +20,13 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         // Loads font from file instead of online
-        Font Parkinsans = Font.loadFont(getClass().getResourceAsStream("/com/languageapp/fonts/Parkinsans/static/Parkinsans-Regular.ttf"), 10);
+        Font Parkinsans = Font.loadFont(
+                getClass().getResourceAsStream("/com/languageapp/fonts/Parkinsans/static/Parkinsans-Regular.ttf"), 10);
 
         scene = new Scene(loadFXML("startScreen"), 375, 667);
         stage.setScene(scene);
         // stage.setFullScreen(true);
-        // stage.setResizable(false);
+        stage.setResizable(false);
         stage.show();
     }
 
