@@ -27,11 +27,6 @@ public class SectionController {
     }
 
     @FXML
-    private void switchToDifficult() throws IOException {
-        App.setRoot("DifficultLessons");
-    }
-
-    @FXML
     private void switchToProfile() throws IOException {
         App.setRoot("Profile");
     }

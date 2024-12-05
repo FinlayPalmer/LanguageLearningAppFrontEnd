@@ -11,11 +11,11 @@
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.MediumLessonsController">
    <children>
       <Label styleClass="title" text="Medium Lessons" />
-
-      <Button onAction="#switchToColors" text="School" />
-      <Button onAction="#switchToFamily" text="Museum" />
-      <Button onAction="#switchToGreetings" text="Airport" />
-      <Button onAction="#switchToLocked" text="Locked" />
+      <Button fx:id="one" onAction="#switchToColors" />
+      <Button fx:id="two" onAction="#switchToFamily" />
+      <Button fx:id="three" onAction="#switchToGreetings" />
+      <Button fx:id="four" onAction="#switchToLocked" />
+      <Button fx:id="five" onAction="#switchToLocked" />
 
       <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToCurrentLesson" pickOnBounds="true" preserveRatio="true">
          <image>
