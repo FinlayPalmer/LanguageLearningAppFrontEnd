@@ -10,11 +10,11 @@
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.EasyLessonsController">
    <children>
       <Label styleClass="title" text="Flashcard" />
-      <Label alignment="CENTER" prefHeight="150.0" prefWidth="214.0" styleClass="flashcard" text="Label" textAlignment="CENTER" />
+      <Label fx:id="spanishWord" alignment="CENTER" prefHeight="150.0" prefWidth="214.0" styleClass="flashcard" textAlignment="CENTER" />
 
       <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToCurrentLesson" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/lesson.jpg" />
+            <Image url="@images/leftarrow.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToEasy" pickOnBounds="true" preserveRatio="true">

@@ -52,7 +52,7 @@ public class EasyLessonsController {
 
     @FXML
     private void switchToFlashcard() throws IOException {
-        App.setRoot("FlashcardQuestion");
+        App.setRoot("Flashcard");
     }
 
     // This should point to the current lesson not always colors!!! - matt
