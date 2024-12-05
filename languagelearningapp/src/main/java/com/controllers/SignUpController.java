@@ -10,6 +10,7 @@ import com.model.LanguageAppFacade;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.Label;
 
 /**
  * @author Finlay Palmer, Astha Singh, Matthew Botteon
@@ -30,6 +31,8 @@ public class SignUpController {
     private TextField usernameField;
     @FXML
     private PasswordField passwordField;
+    @FXML
+    private Label errorMessage;
 
     @FXML
     private void switchToStart() throws IOException {
@@ -49,6 +52,6 @@ public class SignUpController {
                                                    passwordField.getText()).startsWith("Success"))
             App.setRoot("Section");
         // If unsuccessful, the user is sent to a sign up screen displaying an error message
-        else App.setRoot("SignUpFailure");
+        else errorMessage.setText("That username or email is already taken");
     }
 }
