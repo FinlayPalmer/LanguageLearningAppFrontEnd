@@ -38,38 +38,13 @@ public class EasyLessonsController {
     }
 
     @FXML
-    private void switchToLesson() throws IOException {
-        LanguageAppFacade.getInstance().startNewLesson(null)
-    }
-
-    @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("StartScreen");
     }
 
     @FXML
-    private void switchToEasy() throws IOException {
-        App.setRoot("EasyLessons");
-    }
-
-    @FXML
-    private void switchToColors() throws IOException {
-        App.setRoot("ColorsLesson");
-    }
-
-    @FXML
-    private void switchToFamily() throws IOException {
-        App.setRoot("FamilyLesson");
-    }
-
-    @FXML
-    private void switchToGreetings() throws IOException {
-        App.setRoot("GreetingsLesson");
-    }
-
-    @FXML
-    private void switchToLocked() throws IOException {
-        App.setRoot("LockedLesson");
+    private void switchToLesson() throws IOException {
+        App.setRoot("Lesson");
     }
 
     @FXML
@@ -86,11 +61,4 @@ public class EasyLessonsController {
     private void switchToFlashcard() throws IOException {
         App.setRoot("Flashcard");
     }
-
-    // This should point to the current lesson not always colors!!! - matt
-    @FXML
-    private void switchToCurrentLesson() throws IOException {
-        App.setRoot("ColorsLesson");
-    }
-
 }

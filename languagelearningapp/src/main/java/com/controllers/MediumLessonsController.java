@@ -47,23 +47,8 @@ public class MediumLessonsController {
     }
 
     @FXML
-    private void switchToColors() throws IOException {
-        App.setRoot("ColorsLesson");
-    }
-
-    @FXML
-    private void switchToFamily() throws IOException {
-        App.setRoot("FamilyLesson");
-    }
-
-    @FXML
-    private void switchToGreetings() throws IOException {
-        App.setRoot("GreetingsLesson");
-    }
-
-    @FXML
-    private void switchToLocked() throws IOException {
-        App.setRoot("LockedLesson");
+    private void switchToLesson() throws IOException {
+        App.setRoot("Lesson");
     }
 
     @FXML
@@ -75,16 +60,4 @@ public class MediumLessonsController {
     private void switchToSection() throws IOException {
         App.setRoot("Section");
     }
-
-    @FXML
-    private void switchToMedium() throws IOException {
-        App.setRoot("MediumLessons");
-    }
-
-    // This should point to the current lesson not always colors!!! - matt
-    @FXML
-    private void switchToCurrentLesson() throws IOException {
-        App.setRoot("ColorsLesson");
-    }
-
 }

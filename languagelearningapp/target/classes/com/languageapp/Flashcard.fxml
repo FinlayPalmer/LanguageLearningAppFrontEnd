@@ -12,7 +12,7 @@
       <Label styleClass="title" text="Flashcard" />
       <Label fx:id="spanishWord" alignment="CENTER" prefHeight="150.0" prefWidth="214.0" styleClass="flashcard" textAlignment="CENTER" />
 
-      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToCurrentLesson" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToLesson" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/leftarrow.png" />
          </image>

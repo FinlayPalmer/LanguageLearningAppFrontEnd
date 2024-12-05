@@ -9,7 +9,7 @@ import com.languageapp.App;
 /**
  * @author Matthew Botteon
  */
-public class ColorsLessonController {
+public class LessonController {
 
     @FXML
     private void switchToPrimary() throws IOException {
@@ -19,26 +19,6 @@ public class ColorsLessonController {
     @FXML
     private void switchToEasy() throws IOException {
         App.setRoot("EasyLessons");
-    }
-
-    @FXML
-    private void switchToColors() throws IOException {
-        App.setRoot("ColorsLesson");
-    }
-
-    @FXML
-    private void switchToFamily() throws IOException {
-        App.setRoot("FamilyLesson");
-    }
-
-    @FXML
-    private void switchToGreetings() throws IOException {
-        App.setRoot("GreetingsLesson");
-    }
-
-    @FXML
-    private void switchToLocked() throws IOException {
-        App.setRoot("LockedLesson");
     }
 
     @FXML
@@ -56,10 +36,9 @@ public class ColorsLessonController {
         App.setRoot("Flashcard");
     }
 
-    // This should point to the current lesson not always colors!!! - matt
     @FXML
-    private void switchToCurrentLesson() throws IOException {
-        App.setRoot("ColorsLesson");
+    private void switchToLesson() throws IOException {
+        App.setRoot("Lesson");
     }
 
 }

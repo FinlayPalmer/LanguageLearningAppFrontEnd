@@ -56,10 +56,9 @@ public class LeaderboardController {
         App.setRoot("Section");
     }
 
-    // This should point to the current lesson not always colors!!! - matt
     @FXML
-    private void switchToCurrentLesson() throws IOException {
-        App.setRoot("ColorsLesson");
+    private void switchToLesson() throws IOException {
+        App.setRoot("Lesson");
     }
 
     public static class LeaderboardEntry {

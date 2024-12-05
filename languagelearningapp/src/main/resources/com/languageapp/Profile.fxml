@@ -25,14 +25,14 @@
          <bottom>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToCurrentLesson" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/lesson.jpg" />
-                     </image>
-                  </ImageView>
                   <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToSection" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/home.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToLesson" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/lesson.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToProfile" pickOnBounds="true" preserveRatio="true">
