@@ -2,60 +2,58 @@ package com.controllers;
 
 import java.io.IOException;
 
+import javafx.fxml.FXML;
 import com.languageapp.App;
 
-import javafx.fxml.FXML;
-import javafx.scene.shape.Circle;
-
 /**
- * @author Matthew Botteon, Astha Singh
+ * @author Matthew Botteon
  */
 public class EasyLessonsController {
-    
-    @FXML
-    private void switchToSection() throws IOException {
-        App.setRoot("Section");
-    }
-    @FXML
-    private Circle lesson1Circle;
 
     @FXML
-    private Circle lesson2Circle;
-
-    @FXML
-    private Circle lesson3Circle;
-
-    @FXML
-    private Circle lesson4Circle;
-
-    @FXML
-    private void goToCompletedLessons() throws IOException {
-        App.setRoot("CompletedLessons");
+    private void switchToPrimary() throws IOException {
+        App.setRoot("StartScreen");
     }
 
     @FXML
-    private void goToProfile() throws IOException {
-        App.setRoot("Profile");
+    private void switchToEasy() throws IOException {
+        App.setRoot("EasyLessons");
     }
+
     @FXML
-    private void handleColorLesson() throws IOException {
-        System.out.println("Navigating to Colors lesson");
-        App.setRoot("ColorsLesson"); 
+    private void switchToColors() throws IOException {
+        App.setRoot("ColorsLesson");
     }
+
     @FXML
-    private void handleGreetingLesson() throws IOException {
-        System.out.println("Navigating to Greetings Lesson");
+    private void switchToFamily() throws IOException {
+        App.setRoot("FamilyLesson");
+    }
+
+    @FXML
+    private void switchToGreetings() throws IOException {
         App.setRoot("GreetingsLesson");
     }
 
     @FXML
-    private void handleFamilyLesson() throws IOException {
-        System.out.println("Navigating to Family Lesson");
-        App.setRoot("FamilyLesson");
-    }
-    @FXML
-    private void handleLockedLesson() throws IOException {
-        System.out.println("Navigating to Lesson Progress");
+    private void switchToLocked() throws IOException {
         App.setRoot("LockedLesson");
     }
+
+    @FXML
+    private void switchToProfile() throws IOException {
+        App.setRoot("Profile");
+    }
+
+    @FXML
+    private void switchToSection() throws IOException {
+        App.setRoot("Section");
+    }
+
+    // This should point to the current lesson not always colors!!! - matt
+    @FXML
+    private void switchToCurrentLesson() throws IOException {
+        App.setRoot("ColorsLesson");
+    }
+
 }
