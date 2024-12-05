@@ -12,10 +12,11 @@
    <children>
       <Label styleClass="title" text="Easy Lessons" />
 
-      <Button onAction="#switchToColors" text="Colors" />
-      <Button onAction="#switchToFamily" text="Family" />
-      <Button onAction="#switchToGreetings" text="Greetings" />
-      <Button onAction="#switchToLocked" text="Locked" />
+      <Button fx:id="one" onAction="#switchToColors" />
+      <Button fx:id="two" onAction="#switchToFamily" />
+      <Button fx:id="three" onAction="#switchToGreetings" />
+      <Button fx:id="four" onAction="#switchToLocked" />
+      <Button fx:id="five" onAction="#switchToLocked" />
 
       <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToCurrentLesson" pickOnBounds="true" preserveRatio="true">
          <image>
