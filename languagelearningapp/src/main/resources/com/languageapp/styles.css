@@ -23,6 +23,12 @@
   -fx-padding: 10;
 }
 
+.flashcard {
+  -fx-border-color:black;
+  -fx-border-width: 3; 
+  -fx-border-style: solid
+}
+
 .button:hover {
   -fx-background-color: #f9d9bc;
 }
