@@ -10,34 +10,35 @@
 <VBox alignment="CENTER" prefHeight="667" prefWidth="375" spacing="15" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.SignUpController">
     <children>
         <Label styleClass="title" text="Sign Up" />
+      <Label fx:id="errorMessage" styleClass="errorMessage" textAlignment="CENTER" wrapText="true" />
 
         <VBox spacing="5">
-            <Label text="First Name" styleClass="subheading" />
+            <Label styleClass="subheading" text="First Name" />
             <TextField fx:id="firstNameField" promptText="Enter your first name" styleClass="text-field" />
         </VBox>
         
         <VBox spacing="5">
-            <Label text="Last Name" styleClass="subheading" />
+            <Label styleClass="subheading" text="Last Name" />
             <TextField fx:id="lastNameField" promptText="Enter your last name" styleClass="text-field" />
         </VBox>
         
         <VBox spacing="5">
-            <Label text="Email" styleClass="subheading" />
+            <Label styleClass="subheading" text="Email" />
             <TextField fx:id="emailField" promptText="Enter your email" styleClass="text-field" />
         </VBox>
         
         <VBox spacing="5">
-            <Label text="Date of Birth" styleClass="subheading" />
+            <Label styleClass="subheading" text="Date of Birth" />
             <TextField fx:id="dobField" promptText="Enter your date of birth" styleClass="text-field" />
         </VBox>
         
         <VBox spacing="5">
-            <Label text="Username" styleClass="subheading" />
+            <Label styleClass="subheading" text="Username" />
             <TextField fx:id="usernameField" promptText="Enter your username" styleClass="text-field" />
         </VBox>
         
         <VBox spacing="5">
-            <Label text="Password" styleClass="subheading" />
+            <Label styleClass="subheading" text="Password" />
             <PasswordField fx:id="passwordField" promptText="Enter your password" styleClass="password-field" />
         </VBox>
         
