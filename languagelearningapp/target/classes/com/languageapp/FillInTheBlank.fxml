@@ -36,7 +36,7 @@
             <Image url="@images/leftarrow.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToEasy" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToSection" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/home.jpg" />
          </image>
