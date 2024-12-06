@@ -13,15 +13,19 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 /**
  * @author Matthew Botteon, Astha Singh
+ * Handles the navigation for the Leaderboard screen
  */
-
 public class LeaderboardController {
 
+    // Organizes the table the leaderboard is in
     @FXML private TableView<LeaderboardEntry> leaderboardTable;
     @FXML private TableColumn<LeaderboardEntry, Integer> rankColumn;
     @FXML private TableColumn<LeaderboardEntry, String> usernameColumn;
     @FXML private TableColumn<LeaderboardEntry, Integer> lessonsColumn;
 
+    /**
+     * Sets the titles of the columns in the table
+     */
     @FXML
     private void initialize() {
         rankColumn.setCellValueFactory(new PropertyValueFactory<>("rank"));
@@ -31,6 +35,10 @@ public class LeaderboardController {
         leaderboardTable.setItems(getLeaderboardData());
     }
 
+    /**
+     * Loads in Leaderboard data for the potential users
+     * @return The list of user entries
+     */
     private ObservableList<LeaderboardEntry> getLeaderboardData() {
         return FXCollections.observableArrayList(
             new LeaderboardEntry(1, "dog123", 52),
@@ -61,6 +69,9 @@ public class LeaderboardController {
         App.setRoot("Lesson");
     }
 
+    /**
+     * Defines what is necessary for an object inside the leaderboard
+     */
     public static class LeaderboardEntry {
         private final Integer rank;
         private final String username;

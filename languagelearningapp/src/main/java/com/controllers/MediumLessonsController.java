@@ -11,11 +11,13 @@ import com.model.LessonList;
 
 /**
  * @author Matthew Botteon
+ * Handles the navigation to the easy difficulty lessons
  */
 public class MediumLessonsController {
 
     private LessonList list;
 
+    // The generic buttons to take lesson names from the JSON files
     @FXML
     private Button one;
     @FXML
@@ -27,6 +29,9 @@ public class MediumLessonsController {
     @FXML
     private Button five;
 
+    /**
+     * Gets all of the lessons of medium difficulty and sets their title to the text of the buttons
+     */
     @FXML
     private void initialize() {
         list = LessonList.getInstance();

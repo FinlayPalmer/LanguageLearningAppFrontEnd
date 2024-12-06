@@ -11,11 +11,13 @@ import com.model.LessonList;
 
 /**
  * @author Matthew Botteon
+ * Handles the navigation to the easy difficulty lessons
  */
 public class EasyLessonsController {
 
     private LessonList list;
 
+    // The generic buttons to take lesson names from the JSON files
     @FXML
     private Button one;
     @FXML
@@ -27,6 +29,9 @@ public class EasyLessonsController {
     @FXML
     private Button five;
 
+    /**
+     * Gets all of the lessons of easy difficulty and sets their title to the text of the buttons
+     */
     @FXML
     private void initialize() {
         list = LessonList.getInstance();
@@ -47,30 +52,50 @@ public class EasyLessonsController {
         App.setRoot("Lesson");
     }
 
+    /**
+     * If the first button is pushed, the lesson with the name of the text on the button is started before navigation
+     * @throws IOException
+     */
     @FXML
     private void switchToLessonOne() throws IOException {
         LanguageAppFacade.getInstance().startNewLesson(one.getText());
         App.setRoot("Lesson");
     }
 
+    /**
+     * If the second button is pushed, the lesson with the name of the text on the button is started before navigation
+     * @throws IOException
+     */
     @FXML
     private void switchToLessonTwo() throws IOException {
         LanguageAppFacade.getInstance().startNewLesson(two.getText());
         App.setRoot("Lesson");
     }
 
+    /**
+     * If the third button is pushed, the lesson with the name of the text on the button is started before navigation
+     * @throws IOException
+     */
     @FXML
     private void switchToLessonThree() throws IOException {
         LanguageAppFacade.getInstance().startNewLesson(three.getText());
         App.setRoot("Lesson");
     }
 
+    /**
+     * If the fourth button is pushed, the lesson with the name of the text on the button is started before navigation
+     * @throws IOException
+     */
     @FXML
     private void switchToLessonFour() throws IOException {
         LanguageAppFacade.getInstance().startNewLesson(four.getText());
         App.setRoot("Lesson");
     }
 
+    /**
+     * If the fifth button is pushed, the lesson with the name of the text on the button is started before navigation
+     * @throws IOException
+     */
     @FXML
     private void switchToLessonFive() throws IOException {
         LanguageAppFacade.getInstance().startNewLesson(five.getText());

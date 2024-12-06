@@ -2,12 +2,12 @@ package com.controllers;
 
 import java.io.IOException;
 
-import javafx.scene.image.ImageView;
 import javafx.fxml.FXML;
 import com.languageapp.App;
 
 /**
  * @author Matthew Botteon
+ * Handles the navigation for the Section screen, which acts as a dashboard for the user to select their difficulty or view the leaderboard
  */
 public class SectionController {
 

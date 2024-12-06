@@ -3,8 +3,11 @@ package com.controllers;
 import java.io.IOException;
 import javafx.fxml.FXML;
 import com.languageapp.App;
-import com.narration.*;
 
+/**
+ * @author Finlay Palmer
+ * Handles the navigation for getting into the app
+ */
 public class StartScreenController {
 
     @FXML

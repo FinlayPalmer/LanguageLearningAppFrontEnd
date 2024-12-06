@@ -3,8 +3,6 @@ package com.controllers;
 import java.io.IOException;
 
 import com.languageapp.App;
-import com.model.Account;
-import com.model.AccountList;
 import com.model.LanguageAppFacade;
 
 import javafx.fxml.FXML;
@@ -44,6 +42,10 @@ public class SignUpController {
         App.setRoot("Section");
     }
     
+    /**
+     * Passes the information from the user to the facade to create a new account
+     * @throws IOException
+     */
     @FXML
     private void submitSignUp() throws IOException {
         // Sends the data from the form to the signUp method in Facade; if successful, the user is advanced to the next screen

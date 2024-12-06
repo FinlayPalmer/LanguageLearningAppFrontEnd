@@ -6,6 +6,7 @@ import com.languageapp.App;
 
 /**
  * @author Matthew Botteon
+ * Handles the navigation on the profile screen
  */
 public class ProfileController {
     

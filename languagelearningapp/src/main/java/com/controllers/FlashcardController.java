@@ -11,11 +11,17 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
+/**
+ * @author Matthew Botteon
+ * Handles the navigation for the Flashcard question type template screen
+ */
 public class FlashcardController {
 
     private Question currentQuestion;
+    // Spanish word that appears on the flashcard
     @FXML
     private Label spanishWord;
+    // The user's typed answer
     @FXML
     private TextField answer;
     @FXML
@@ -23,6 +29,9 @@ public class FlashcardController {
     @FXML
     private ImageView wrong;
 
+    /**
+     * Gets the word in spanish and puts it inside the flashcard, given a border in CSS
+     */
     @FXML
     private void initialize() {
         currentQuestion = LanguageAppFacade.getInstance().getQuestion();
@@ -42,6 +51,10 @@ public class FlashcardController {
         App.setRoot("Flashcard");
     }
 
+    /**
+     * Moves to the previous question - the screen it changes to depends on the type of question
+     * @throws IOException
+     */
     @FXML
     private void switchToPrevQuestion() throws IOException {
         currentQuestion = LanguageAppFacade.getInstance().previousQuestion();
@@ -57,6 +70,10 @@ public class FlashcardController {
             App.setRoot("UserTextEntry");
     }
 
+    /**
+     * Moves to the next question - the screen it changes to depends on the type of question
+     * @throws IOException
+     */
     @FXML
     private void switchToNextQuestion() throws IOException {
         currentQuestion = LanguageAppFacade.getInstance().nextQuestion();
@@ -98,6 +115,10 @@ public class FlashcardController {
         App.setRoot("Lesson");
     }
 
+    /**
+     * Sends the user's typed answer in to check, if they are right a check mark appears, else an X appears
+     * @throws IOException
+     */
     @FXML
     private void checkAnswer() throws IOException {
         if(LanguageAppFacade.getInstance().getQuestion().isAnswerCorrect(answer.getText())) {

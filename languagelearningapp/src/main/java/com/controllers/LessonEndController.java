@@ -10,12 +10,16 @@ import com.model.LanguageAppFacade;
 
 /**
  * @author Matthew Botteon
+ * Handles the navigation for the screen that appears once the user completes a lesson
  */
 public class LessonEndController {
 
     @FXML
     private Label endLesson;
 
+    /**
+     * Wraps the text of the message printed to the user
+     */
     @FXML
     private void initialize() {
         endLesson.setWrapText(true);
@@ -42,6 +46,10 @@ public class LessonEndController {
         App.setRoot("Lesson");
     }
 
+    /**
+     * Goes to the last question of the lesson, depending on the type it will go to the appropriate template screen
+     * @throws IOException
+     */
     @FXML
     private void switchToQuestion() throws IOException {
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion() == null)

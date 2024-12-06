@@ -10,12 +10,17 @@ import com.model.LanguageAppFacade;
 
 /**
  * @author Matthew Botteon
+ * Handles the navigation for the generic Lesson screen
  */
 public class LessonController {
 
+    // The name of the lesson, comes from JSON file
     @FXML
     private Label lessonName;
 
+    /**
+     * Gets the title of the lesson and sets it to the label
+     */
     @FXML
     private void initialize() {
         lessonName.setText(LanguageAppFacade.getInstance().getLesson().getTitle() + " Lesson");
@@ -51,6 +56,10 @@ public class LessonController {
         App.setRoot("Lesson");
     }
 
+    /**
+     * Goes to the first question of the lesson, depending on the type it will go to the appropriate template screen
+     * @throws IOException
+     */
     @FXML
     private void switchToQuestion() throws IOException {
         if(LanguageAppFacade.getInstance().getLesson().getCurrentQuestion() ==  null)

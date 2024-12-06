@@ -11,6 +11,10 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Label;
 
+/**
+ * @author Finlay Palmer
+ * Handles the navigation for the Login screen
+ */
 public class LoginController {
 
     @FXML
@@ -25,6 +29,10 @@ public class LoginController {
         App.setRoot("StartScreen");
     }
 
+    /**
+     * Checks the username and password against the list of accounts and prints an error message if something is wrong
+     * @throws IOException
+     */
     @FXML
     private void switchToSection() throws IOException {
         LanguageAppFacade languageAppFacade = LanguageAppFacade.getInstance();

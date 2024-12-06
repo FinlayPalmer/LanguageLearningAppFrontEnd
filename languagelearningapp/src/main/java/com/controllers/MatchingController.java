@@ -13,22 +13,26 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
+/**
+ * @author Matthew Botteon
+ * Handles the navigation for the Matching question type template screen
+ */
 public class MatchingController {
 
     private Question currentQuestion;
     private Matching matchingQuestion;
+    // Text at top previewing the Spanish terms
     @FXML
     private Label spanishWords;
+    // Text at top previewing the English terms
     @FXML
     private Label options;
-    @FXML
-    private TextField answer;
     @FXML
     private ImageView check;
     @FXML
     private ImageView wrong;
 
-    // Terms to match to
+    // Spanish terms to match to
     @FXML
     private Label choice1;
     @FXML
@@ -53,6 +57,10 @@ public class MatchingController {
     private ChoiceBox<String> answer5;
 
 
+    /**
+     * Get the text of each option out of the ArrayList and organize the Spanish words on the
+     * left and the boxes of answer choices on the right
+     */
     @FXML
     private void initialize() {
         matchingQuestion = (Matching)LanguageAppFacade.getInstance().getQuestion();
@@ -97,6 +105,10 @@ public class MatchingController {
         App.setRoot("Flashcard");
     }
 
+    /**
+     * Moves to the previous question - the screen it changes to depends on the type of question
+     * @throws IOException
+     */
     @FXML
     private void switchToPrevQuestion() throws IOException {
         currentQuestion = LanguageAppFacade.getInstance().previousQuestion();
@@ -112,6 +124,10 @@ public class MatchingController {
             App.setRoot("UserTextEntry");
     }
 
+    /**
+     * Moves to the next question - the screen it changes to depends on the type of question
+     * @throws IOException
+     */
     @FXML
     private void switchToNextQuestion() throws IOException {
         currentQuestion = LanguageAppFacade.getInstance().nextQuestion();
@@ -153,6 +169,11 @@ public class MatchingController {
         App.setRoot("Lesson");
     }
 
+    /**
+     * Sends the user's typed answer in to check by combining the choices
+     * into a single string, if they are right a check mark appears, else an X appears
+     * @throws IOException
+     */
     @FXML
     private void checkAnswer() throws IOException {
         String answer = "";
