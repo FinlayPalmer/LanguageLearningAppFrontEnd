@@ -6,44 +6,52 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.MediumLessonsController">
+<VBox alignment="CENTER" prefHeight="667.0" prefWidth="375.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.MediumLessonsController">
    <children>
-      <Label styleClass="title" text="Medium Lessons" />
-
-      <Button fx:id="one" onAction="#switchToLessonOne" />
-      <Button fx:id="two" onAction="#switchToLessonTwo" />
-      <Button fx:id="three" onAction="#switchToLessonThree" />
-      <Button fx:id="four" onAction="#switchToLessonFour" />
-      <Button fx:id="five" onAction="#switchToLessonFive" />
-
-      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToLesson" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/lesson.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToSection" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/home.jpg" />
-         </image>
-         <VBox.margin>
-            <Insets right="200.0" top="-85.0" />
-         </VBox.margin>
-      </ImageView>
-      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToProfile" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/profile.jpg" />
-         </image>
-         <VBox.margin>
-            <Insets right="-200.0" top="-85.0" />
-         </VBox.margin>
-      </ImageView>
+      <BorderPane prefHeight="667.0" prefWidth="375.0">
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToSection" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/home.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToLesson" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/lesson.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToProfile" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/profile.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="title" text="Medium Lessons" />
+                  <Button fx:id="one" onAction="#switchToLessonOne" />
+                  <Button fx:id="two" onAction="#switchToLessonTwo" />
+                  <Button fx:id="three" onAction="#switchToLessonThree" />
+                  <Button fx:id="four" onAction="#switchToLessonFour" />
+                  <Button fx:id="five" onAction="#switchToLessonFive" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </center>
+      </BorderPane>
 
    </children>
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
    <stylesheets>
       <URL value="@styles.css" />
    </stylesheets>
