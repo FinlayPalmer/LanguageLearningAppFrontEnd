@@ -16,6 +16,11 @@
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
                <children>
                   <Label styleClass="title" text="Profile" />
+                  <ImageView fitHeight="101.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/avatar.png" />
+                     </image>
+                  </ImageView>
                   <Label fx:id="name" styleClass="subheading" text="Label" />
                   <Label fx:id="email" styleClass="subheading" text="Label" />
                   <Label fx:id="username" styleClass="subheading" text="Label" />
