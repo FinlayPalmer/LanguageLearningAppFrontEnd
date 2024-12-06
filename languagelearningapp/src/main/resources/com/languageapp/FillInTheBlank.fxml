@@ -7,52 +7,66 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.FillInTheBlankController">
    <children>
-      <Label styleClass="title" text="Fill In The Blank" />
-      <Label fx:id="spanishWords" />
-
-      <TextField fx:id="answer" />
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Button mnemonicParsing="false" onMouseClicked="#checkAnswer" text="Check Answer" />
-            <ImageView fx:id="check" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@images/check.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="wrong" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@images/wrong.png" />
-               </image>
-            </ImageView>
-         </children>
-      </HBox>
-
-      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToLesson" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/leftarrow.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToSection" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/home.jpg" />
-         </image>
-         <VBox.margin>
-            <Insets right="200.0" top="-85.0" />
-         </VBox.margin>
-      </ImageView>
-      <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToFlashcard" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/rightarrow.png" />
-         </image>
-         <VBox.margin>
-            <Insets right="-200.0" top="-85.0" />
-         </VBox.margin>
-      </ImageView>
+      <BorderPane prefHeight="667.0" prefWidth="375.0">
+         <center>
+            <VBox spacing="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="title" text="Fill In The Blank" />
+                  <Label fx:id="spanishWords" />
+            
+                  <TextField fx:id="answer" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#checkAnswer" text="Check Answer" />
+                        <ImageView fx:id="check" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@images/check.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="wrong" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@images/wrong.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToSection" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/home.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToPrevQuestion" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/leftarrow.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToNextQuestion" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/rightarrow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
       
 
    </children>
