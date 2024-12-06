@@ -21,7 +21,6 @@ public class App extends Application {
         // Loads font from file instead of online
         Font Parkinsans = Font.loadFont(
                 getClass().getResourceAsStream("/com/languageapp/fonts/Parkinsans/static/Parkinsans-Regular.ttf"), 10);
-
         scene = new Scene(loadFXML("startScreen"), 375, 667);
         stage.setScene(scene);
         // stage.setFullScreen(true);
