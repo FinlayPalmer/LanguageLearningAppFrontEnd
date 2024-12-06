@@ -27,6 +27,7 @@ public class FlashcardController {
     private void initialize() {
         currentQuestion = LanguageAppFacade.getInstance().getQuestion();
         spanishWord.setText(currentQuestion.getTitle());
+        spanishWord.setWrapText(true);
         check.setVisible(false);
         wrong.setVisible(false);
     }

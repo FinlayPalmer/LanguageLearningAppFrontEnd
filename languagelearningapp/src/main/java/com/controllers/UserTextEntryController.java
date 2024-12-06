@@ -30,6 +30,7 @@ public class UserTextEntryController {
         entryQuestion = (UserTextEntry)LanguageAppFacade.getInstance().getQuestion();
         currentQuestion = LanguageAppFacade.getInstance().getQuestion();
         spanishPhrase.setText(entryQuestion.getQuestionText());
+        spanishPhrase.setWrapText(true);
         check.setVisible(false);
         wrong.setVisible(false);
     }
