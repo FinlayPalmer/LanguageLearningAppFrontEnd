@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="667.0" prefWidth="375.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.LessonEndController">
+   <children>
+      <BorderPane prefHeight="667.0" prefWidth="375.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="title" text="Congratulations!" />
+                  <Label fx:id="endLesson" styleClass="subheading" text="You have completed the lesson! You have earned a new avatar!" />
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToSection" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/home.jpg" />
+                     </image>
+                  </ImageView>
+            
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToLesson" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/lesson.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" onMouseClicked="#switchToProfile" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/profile.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+
+   </children>
+   <stylesheets>
+      <URL value="@styles.css" />
+   </stylesheets>
+</VBox>

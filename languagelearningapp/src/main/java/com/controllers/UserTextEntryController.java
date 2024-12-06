@@ -48,6 +48,8 @@ public class UserTextEntryController {
     @FXML
     private void switchToPrevQuestion() throws IOException {
         currentQuestion = LanguageAppFacade.getInstance().previousQuestion();
+        if (currentQuestion == null)
+            App.setRoot("LessonEnd");
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Flashcard"))
             App.setRoot("Flashcard");
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
@@ -61,6 +63,8 @@ public class UserTextEntryController {
     @FXML
     private void switchToNextQuestion() throws IOException {
         currentQuestion = LanguageAppFacade.getInstance().nextQuestion();
+        if (currentQuestion == null)
+            App.setRoot("LessonEnd");
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Flashcard"))
             App.setRoot("Flashcard");
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
