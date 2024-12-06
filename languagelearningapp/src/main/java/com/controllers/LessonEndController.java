@@ -22,6 +22,7 @@ public class LessonEndController {
      */
     @FXML
     private void initialize() {
+        LanguageAppFacade.getInstance().endLesson();
         endLesson.setWrapText(true);
     }
 

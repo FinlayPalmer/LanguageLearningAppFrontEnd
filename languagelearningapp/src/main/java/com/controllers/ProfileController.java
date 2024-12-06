@@ -62,4 +62,9 @@ public class ProfileController {
     private void switchToLesson() throws IOException {
         App.setRoot("Lesson");
     }
+
+    @FXML
+    private void getWordsToReview() throws IOException {
+        System.out.println(LanguageAppFacade.getInstance().viewDashboard());
+    }
 }

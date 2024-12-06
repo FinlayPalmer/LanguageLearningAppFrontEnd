@@ -15,14 +15,15 @@
          <center>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label text="Profile" styleClass="title" />
-                  <Label fx:id="name" text="Label" styleClass="subheading" />
-                  <Label fx:id="email" text="Label" styleClass="subheading" />
-                  <Label fx:id="username" text="Label" styleClass="subheading" />
-                  <Label fx:id="dob" text="Label" styleClass="subheading" />
+                  <Label styleClass="title" text="Profile" />
+                  <Label fx:id="name" styleClass="subheading" text="Label" />
+                  <Label fx:id="email" styleClass="subheading" text="Label" />
+                  <Label fx:id="username" styleClass="subheading" text="Label" />
+                  <Label fx:id="dob" styleClass="subheading" text="Label" />
             
                     <Button onAction="#switchToResetPassword" text="Reset Password" />
                     <Button onAction="#switchToStart" text="Logout" />
+                  <Button onAction="#getWordsToReview" text="Get List of Words to Review" />
                </children>
             </VBox>
          </center>
