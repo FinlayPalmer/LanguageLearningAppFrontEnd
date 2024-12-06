@@ -6,6 +6,10 @@ import com.languageapp.App;
 import com.model.LanguageAppFacade;
 import com.model.Question;
 
+import com.narration.Narrator;
+import javafx.application.Platform;
+
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -35,10 +39,13 @@ public class FlashcardController {
     @FXML
     private void initialize() {
         currentQuestion = LanguageAppFacade.getInstance().getQuestion();
-        spanishWord.setText(currentQuestion.getTitle());
-        spanishWord.setWrapText(true);
-        check.setVisible(false);
-        wrong.setVisible(false);
+    spanishWord.setText(currentQuestion.getTitle());
+    spanishWord.setWrapText(true);
+    check.setVisible(false);
+    wrong.setVisible(false);
+
+    // Narration when the screen loads
+    Platform.runLater(() -> Narrator.playSound(currentQuestion.getTitle()));
     }
 
     @FXML
