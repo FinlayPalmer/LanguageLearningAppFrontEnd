@@ -37,6 +37,14 @@ public class LanguageAppFacade {
     }
 
     /**
+     * Gets the current account the user is logged in to
+     * @return The account the user is logged in to
+     */
+    public Account getAccount() {
+        return account;
+    }
+
+    /**
      * Allows user to login
      * 
      * @param username User's username
