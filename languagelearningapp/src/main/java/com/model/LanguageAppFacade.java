@@ -21,7 +21,7 @@ public class LanguageAppFacade {
      */
     private LanguageAppFacade() {
         account = new Account(null);
-        //currentLesson = LessonList.getInstance().getListOfAllLessons().get(0);
+        // currentLesson = LessonList.getInstance().getListOfAllLessons().get(0);
     }
 
     /**
@@ -38,6 +38,7 @@ public class LanguageAppFacade {
 
     /**
      * Gets the current account the user is logged in to
+     * 
      * @return The account the user is logged in to
      */
     public Account getAccount() {
@@ -57,12 +58,12 @@ public class LanguageAppFacade {
                 && accountList.getAccount(username, password).isMatch(username, password)) {
             account = accountList.getAccount(username, password);
             // Return a welcome message and the account details if their account is valid
-            return /*"You have successfully logged in!" + */ account;
+            return /* "You have successfully logged in!" + */ account;
         }
         // Set current account to null and print an error message if their account was
         // not valid
         account = null;
-        return /* "Your account was not able to be verified."*/ null;
+        return /* "Your account was not able to be verified." */ null;
     }
 
     /**
@@ -88,10 +89,14 @@ public class LanguageAppFacade {
     public String signUp(String firstName, String lastName, String email, String dateOfBirth, String username,
             String password) {
         AccountList accountList = AccountList.getInstance();
+        /*if (firstName.equals("") || lastName.equals("") || email.equals("") || dateOfBirth.equals("")
+                || username.equals("") | password.equals("")) {
+            return "nullFieldError";
+        }*/
         account = accountList.addAccount(firstName, lastName, email, dateOfBirth, username, password);
         if (account == null) {
             // Return error message if account was not added correctly
-            return "Please ensure your email or username is unique";
+            return "uniqueError";
         }
         // Save updated account list to JSON
         accountList.save();
@@ -205,7 +210,7 @@ public class LanguageAppFacade {
         currentLesson = lessonList.getLesson(lessonName);
         Question currentQuestion = currentLesson.startLesson();
         if (currentQuestion != null) {
-            //Narrator.playSound(currentQuestion.getQuestionText());
+            // Narrator.playSound(currentQuestion.getQuestionText());
             return currentQuestion;
         }
         return null;
@@ -292,7 +297,7 @@ public class LanguageAppFacade {
         currentLesson.moveToNextQuestion();
         Question nextQuestion = getQuestion();
         if (nextQuestion != null) {
-            //Narrator.playSound(nextQuestion.getQuestionText());
+            // Narrator.playSound(nextQuestion.getQuestionText());
             return nextQuestion;
         }
         return null;
@@ -320,12 +325,13 @@ public class LanguageAppFacade {
             // If they get it right in Review Lesson, it should be removed from their list
             if (currentLesson.getTitle().equals("Review Lesson")) {
                 if (currentLesson.getCurrentQuestion().getQuestionType().equals("Flashcard") ||
-                    currentLesson.getCurrentQuestion().getQuestionType().equals("Matching")) {
+                        currentLesson.getCurrentQuestion().getQuestionType().equals("Matching")) {
                     for (Word word : currentLesson.getCurrentQuestion().getWordsInQuestion())
                         account.getDashboard().removeWordFromReviewList(word);
                 } else {
-                // Means it is a Phrase based question, remove the phrase from the list
-                account.getDashboard().removePhraseFromReviewList(currentLesson.getCurrentQuestion().getPhraseInQuestion());
+                    // Means it is a Phrase based question, remove the phrase from the list
+                    account.getDashboard()
+                            .removePhraseFromReviewList(currentLesson.getCurrentQuestion().getPhraseInQuestion());
                 }
             }
             currentLesson.updateScore();

@@ -41,19 +41,27 @@ public class SignUpController {
     private void switchToSection() throws IOException {
         App.setRoot("Section");
     }
-    
+
     /**
      * Passes the information from the user to the facade to create a new account
+     * 
      * @throws IOException
      */
     @FXML
     private void submitSignUp() throws IOException {
-        // Sends the data from the form to the signUp method in Facade; if successful, the user is advanced to the next screen
-        if (LanguageAppFacade.getInstance().signUp(firstNameField.getText(), lastNameField.getText(), 
-                                                   emailField.getText(), dobField.getText(), usernameField.getText(),
-                                                   passwordField.getText()).startsWith("Success"))
+        // Sends the data from the form to the signUp method in Facade; if successful,
+        // the user is advanced to the next screen
+        String message = LanguageAppFacade.getInstance().signUp(firstNameField.getText(), lastNameField.getText(),
+                emailField.getText(), dobField.getText(), usernameField.getText(),
+                passwordField.getText());
+        if (message.startsWith("Success"))
             App.setRoot("Section");
-        // If unsuccessful, the user is sent to a sign up screen displaying an error message
-        else errorMessage.setText("That username or email is already taken");
+        // If unsuccessful, the user is sent to a sign up screen displaying an error
+        // message
+        else if (message.startsWith("uniqueError")) {
+            errorMessage.setText("That username or email is already taken");
+        } else {
+            errorMessage.setText("Please make sure all fields are correct");
+        }
     }
 }
