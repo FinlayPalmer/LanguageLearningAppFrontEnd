@@ -13,7 +13,8 @@
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.FillInTheBlankController">
    <children>
       <Label styleClass="title" text="Fill In The Blank" />
-      <Label fx:id="spanishWords" styleClass="matching" text="Label" />
+      <Label fx:id="spanishWords" />
+
       <TextField fx:id="answer" />
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>

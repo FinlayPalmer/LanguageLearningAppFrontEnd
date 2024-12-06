@@ -111,7 +111,7 @@ public class FillInTheBlank extends Question {
      * Returns the question text as a String with a blank space
      */
     public String toString() {
-        String string = "--------------------\n" + questionType + "\nEnglish Meaning: " + title + "\n";
+        String string = "\nEnglish Meaning: " + title + "\n";
         for (int i = 0; i < questionText.getPhraseText().size(); i++) {
             if (i != blankPosition)
                 string = string + questionText.getPhraseText().get(i) + " ";

@@ -48,10 +48,10 @@ public class FlashcardController {
             App.setRoot("Flashcard");
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
             App.setRoot("Matching");
-        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("FillInTheBlank"))
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Fill In The Blank"))
             App.setRoot("FillInTheBlank");
-        //if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("UserTextEntry"))
-        //    App.setRoot("UserTextEntry");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("User Text Entry"))
+            App.setRoot("UserTextEntry");
     }
 
     @FXML
@@ -61,10 +61,10 @@ public class FlashcardController {
             App.setRoot("Flashcard");
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
             App.setRoot("Matching");
-        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("FillInTheBlank"))
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Fill In The Blank"))
             App.setRoot("FillInTheBlank");
-        //if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("UserTextEntry"))
-        //    App.setRoot("UserTextEntry");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("User Text Entry"))
+            App.setRoot("UserTextEntry");
     }
 
     @FXML

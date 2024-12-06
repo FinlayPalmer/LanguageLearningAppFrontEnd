@@ -4,20 +4,20 @@ import java.io.IOException;
 
 import com.languageapp.App;
 import com.model.LanguageAppFacade;
-import com.model.FillInTheBlank;
 import com.model.Question;
+import com.model.UserTextEntry;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
-public class FillInTheBlankController {
+public class UserTextEntryController {
 
+    private UserTextEntry entryQuestion;
     private Question currentQuestion;
-    private FillInTheBlank blankQuestion;
     @FXML
-    private Label spanishWords;
+    private Label spanishPhrase;
     @FXML
     private TextField answer;
     @FXML
@@ -25,13 +25,11 @@ public class FillInTheBlankController {
     @FXML
     private ImageView wrong;
 
-
     @FXML
     private void initialize() {
-        blankQuestion = (FillInTheBlank)LanguageAppFacade.getInstance().getQuestion();
+        entryQuestion = (UserTextEntry)LanguageAppFacade.getInstance().getQuestion();
         currentQuestion = LanguageAppFacade.getInstance().getQuestion();
-        spanishWords.setText(blankQuestion.toString());
-
+        spanishPhrase.setText(entryQuestion.getQuestionText());
         check.setVisible(false);
         wrong.setVisible(false);
     }
@@ -55,7 +53,7 @@ public class FillInTheBlankController {
             App.setRoot("Matching");
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Fill In The Blank"))
             App.setRoot("FillInTheBlank");
-        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Use rText Entry"))
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("User Text Entry"))
             App.setRoot("UserTextEntry");
     }
 

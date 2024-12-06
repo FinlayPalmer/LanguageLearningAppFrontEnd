@@ -57,6 +57,7 @@ public class MatchingController {
     @FXML
     private void initialize() {
         matchingQuestion = (Matching)LanguageAppFacade.getInstance().getQuestion();
+        currentQuestion = LanguageAppFacade.getInstance().getQuestion();
         String text = " ";
         for (int i = 0; i < matchingQuestion.getSpanishWords().size(); i++)
             text = text.concat(matchingQuestion.getSpanishWords().get(i).getWordText() + " ");
@@ -106,10 +107,10 @@ public class MatchingController {
             App.setRoot("Flashcard");
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
             App.setRoot("Matching");
-        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("FillInTheBlank"))
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Fill In The Blank"))
             App.setRoot("FillInTheBlank");
-        //if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("UserTextEntry"))
-        //    App.setRoot("UserTextEntry");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("User Text Entry"))
+            App.setRoot("UserTextEntry");
     }
 
     @FXML
@@ -121,10 +122,10 @@ public class MatchingController {
             App.setRoot("Flashcard");
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
             App.setRoot("Matching");
-        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("FillInTheBlank"))
+            if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Fill In The Blank"))
             App.setRoot("FillInTheBlank");
-        //if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("UserTextEntry"))
-        //    App.setRoot("UserTextEntry");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("User Text Entry"))
+            App.setRoot("UserTextEntry");
     }
 
     @FXML
