@@ -1,3 +1,3 @@
 # LanguageLearningAppFrontEnd
 
-Youtube Video for Nov 17 check-in assignment: https://github.com/FinlayPalmer/LanguageLearningAppFrontEnd.git
+Youtube Video for Dec 6 Front End assignment: https://youtu.be/QEfuvEQ60v0
