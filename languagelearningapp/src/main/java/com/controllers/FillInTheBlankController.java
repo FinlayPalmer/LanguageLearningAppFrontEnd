@@ -20,6 +20,8 @@ public class FillInTheBlankController {
     @FXML
     private Label spanishWords;
     @FXML
+    private TextField answer;
+    @FXML
     private ImageView check;
     @FXML
     private ImageView wrong;
@@ -47,7 +49,14 @@ public class FillInTheBlankController {
     @FXML
     private void switchToPrevQuestion() throws IOException {
         currentQuestion = LanguageAppFacade.getInstance().previousQuestion();
-        App.setRoot("Flashcard");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Flashcard"))
+            App.setRoot("Flashcard");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
+            App.setRoot("Matching");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("FillInTheBlank"))
+            App.setRoot("FillInTheBlank");
+        //if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("UserTextEntry"))
+        //    App.setRoot("UserTextEntry");
     }
 
     @FXML
@@ -91,13 +100,12 @@ public class FillInTheBlankController {
 
     @FXML
     private void checkAnswer() throws IOException {
-        String answer = "";
-        if(LanguageAppFacade.getInstance().getQuestion().isAnswerCorrect(answer)) {
+        if(LanguageAppFacade.getInstance().getQuestion().isAnswerCorrect(answer.getText())) {
             check.setVisible(true);
             wrong.setVisible(false);
         } else {
             wrong.setVisible(true);
             check.setVisible(false);
-        } 
+        }
     }
 }

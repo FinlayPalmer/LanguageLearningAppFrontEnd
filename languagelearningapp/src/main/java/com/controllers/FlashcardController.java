@@ -44,7 +44,14 @@ public class FlashcardController {
     @FXML
     private void switchToPrevQuestion() throws IOException {
         currentQuestion = LanguageAppFacade.getInstance().previousQuestion();
-        App.setRoot("Flashcard");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Flashcard"))
+            App.setRoot("Flashcard");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
+            App.setRoot("Matching");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("FillInTheBlank"))
+            App.setRoot("FillInTheBlank");
+        //if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("UserTextEntry"))
+        //    App.setRoot("UserTextEntry");
     }
 
     @FXML
@@ -94,6 +101,6 @@ public class FlashcardController {
         } else {
             wrong.setVisible(true);
             check.setVisible(false);
-        } 
+        }
     }
 }
