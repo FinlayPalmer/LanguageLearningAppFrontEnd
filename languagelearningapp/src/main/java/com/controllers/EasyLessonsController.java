@@ -86,9 +86,4 @@ public class EasyLessonsController {
     private void switchToSection() throws IOException {
         App.setRoot("Section");
     }
-
-    @FXML
-    private void switchToFlashcard() throws IOException {
-        App.setRoot("Flashcard");
-    }
 }

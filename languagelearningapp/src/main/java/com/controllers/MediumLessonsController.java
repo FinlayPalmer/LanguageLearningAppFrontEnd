@@ -43,11 +43,6 @@ public class MediumLessonsController {
     }
 
     @FXML
-    private void switchToEasy() throws IOException {
-        App.setRoot("EasyLessons");
-    }
-
-    @FXML
     private void switchToLesson() throws IOException {
         App.setRoot("Lesson");
     }
