@@ -106,10 +106,14 @@ public class MatchingController {
     @FXML
     private void switchToNextQuestion() throws IOException {
         currentQuestion = LanguageAppFacade.getInstance().nextQuestion();
-        if (currentQuestion.getQuestionType().equals("Flashcard"))
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Flashcard"))
             App.setRoot("Flashcard");
-        if (currentQuestion.getQuestionType().equals("Matching"))
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
             App.setRoot("Matching");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("FillInTheBlank"))
+            App.setRoot("FillInTheBlank");
+        //if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("UserTextEntry"))
+        //    App.setRoot("UserTextEntry");
     }
 
     @FXML

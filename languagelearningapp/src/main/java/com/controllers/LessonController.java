@@ -57,5 +57,9 @@ public class LessonController {
             App.setRoot("Flashcard");
         if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("Matching"))
             App.setRoot("Matching");
+        if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("FillInTheBlank"))
+            App.setRoot("FillInTheBlank");
+        //if (LanguageAppFacade.getInstance().getLesson().getCurrentQuestion().getQuestionType().equals("UserTextEntry"))
+        //    App.setRoot("UserTextEntry");
     }
 }

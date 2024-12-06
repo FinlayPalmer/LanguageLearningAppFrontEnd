@@ -4,29 +4,32 @@ import java.io.IOException;
 
 import com.languageapp.App;
 import com.model.LanguageAppFacade;
+import com.model.FillInTheBlank;
 import com.model.Question;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
-public class FlashcardController {
+public class FillInTheBlankController {
 
     private Question currentQuestion;
+    private FillInTheBlank blankQuestion;
     @FXML
-    private Label spanishWord;
-    @FXML
-    private TextField answer;
+    private Label spanishWords;
     @FXML
     private ImageView check;
     @FXML
     private ImageView wrong;
 
+
     @FXML
     private void initialize() {
-        currentQuestion = LanguageAppFacade.getInstance().getQuestion();
-        spanishWord.setText(currentQuestion.getTitle());
+        blankQuestion = (FillInTheBlank)LanguageAppFacade.getInstance().getQuestion();
+        spanishWords.setText(blankQuestion.getQuestionText());
+
         check.setVisible(false);
         wrong.setVisible(false);
     }
@@ -88,7 +91,8 @@ public class FlashcardController {
 
     @FXML
     private void checkAnswer() throws IOException {
-        if(LanguageAppFacade.getInstance().getQuestion().isAnswerCorrect(answer.getText())) {
+        String answer = "";
+        if(LanguageAppFacade.getInstance().getQuestion().isAnswerCorrect(answer)) {
             check.setVisible(true);
             wrong.setVisible(false);
         } else {
