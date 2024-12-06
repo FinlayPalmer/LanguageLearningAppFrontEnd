@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -15,8 +16,11 @@
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
                <children>
                   <Label styleClass="title" text="Congratulations!" />
-                  <Label fx:id="endLesson" styleClass="subheading" text="You have completed the lesson! You have earned a new avatar!" />
+                  <Label fx:id="endLesson" styleClass="subheading" text="You have completed the lesson! You have earned a new avatar!" textAlignment="CENTER" wrapText="true" />
                </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
             </VBox>
          </center>
          <bottom>
