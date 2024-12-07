@@ -89,10 +89,10 @@ public class LanguageAppFacade {
     public String signUp(String firstName, String lastName, String email, String dateOfBirth, String username,
             String password) {
         AccountList accountList = AccountList.getInstance();
-        /*if (firstName.equals("") || lastName.equals("") || email.equals("") || dateOfBirth.equals("")
+        if (firstName.equals("") || lastName.equals("") || email.equals("") || dateOfBirth.equals("")
                 || username.equals("") | password.equals("")) {
             return "nullFieldError";
-        }*/
+        }
         account = accountList.addAccount(firstName, lastName, email, dateOfBirth, username, password);
         if (account == null) {
             // Return error message if account was not added correctly
