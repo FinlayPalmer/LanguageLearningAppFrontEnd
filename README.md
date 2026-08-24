@@ -58,7 +58,7 @@ This project was developed collaboratively as a team for **CSCE 247** at the Uni
 
 A video demonstration of the completed application is available on YouTube:
 
-[CSCE247 Front End Presentation - Fantastic Four](https://www.youtube.com/watch?v=a56T2llZf_k)
+[CSCE247 Front End Presentation - Fantastic Four](https://youtu.be/QEfuvEQ60v0)
 
 ## What We Learned
 
